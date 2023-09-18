@@ -1,0 +1,93 @@
+@import url("reset.css");
+
+*{
+	color: blue;
+}
+
+h1{
+	color: black;
+}
+.main-title{
+	color: teal;
+}
+
+.menu-list .list-item{
+	color: greenyellow;
+}
+h2{
+	color: red;
+}
+
+#facts{
+	color: blue;
+}
+
+#behavior{
+	color: blue;
+}
+
+#birth{
+	color: blue;
+}
+
+.general-info p{
+	color: purple;
+}
+
+.interesting-facts p{
+	color: blueviolet;
+}
+
+.panda-appearance p{
+	color: brown;
+}
+
+.panda-behavior p{
+	color: green;
+}
+
+.panda-food p{
+	color: grey;
+}
+
+.panda-birth p{
+	color: hotpink;
+}
+
+.panda-zoo li{
+	color: aqua;
+}
+
+.navigation .menu-list .list-item{
+	color: forestgreen;
+}
+
+.back-to-top{
+	color: black;
+}
+
+span{
+	color: red;
+}
+.general-info span{
+	color: yellowgreen;
+}
+
+.panda-birth span{
+	color: violet;
+}
+
+.general-info > p{
+	color: tomato;
+}
+.panda-zoo * {
+	color: grey;
+}
+
+.photo ~ p{
+	color: mediumseagreen;
+}
+
+.photo + p {
+	color: blue;
+}
