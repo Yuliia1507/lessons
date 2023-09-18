@@ -84,6 +84,9 @@ span{
 	color: grey;
 }
 
+.panda-zoo p{
+	color: blueviolet;
+}
 .photo ~ p{
 	color: mediumseagreen;
 }
