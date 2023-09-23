@@ -1,0 +1,150 @@
+@import url("reset.css");
+
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+
+@font-face {
+	font-family: "FoglihtenNo06";
+	src: url(../fonts/FoglihtenNo06.woff2) format("woff2"),
+			url(../fonts/FoglihtenNo06.woff) format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Beer money";
+	src: url(../fonts/beermoney.woff2) format("woff2"),
+			url(../fonts/beermoney.woff) format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;			
+}
+
+body{
+	font-family: "Rubik", sans-serif;
+}
+
+h1 {
+	color: rgb(11, 11, 147);
+	font-size: 60px;
+	font-weight: 600;
+	text-align: center;
+	text-shadow: 5px 5px 5px #165befe0;
+}
+
+h2{
+		color: rgb(88, 88, 195);
+		font-size: 30px;
+		font-weight: 600;
+		text-align: center;
+		text-shadow: 10px 5px 10px #5c99d9;
+		letter-spacing: 10px;
+}
+
+.menu ul li{
+	color: rgb(251, 105, 1);
+	font-size: 20px;
+	font-style: italic;
+	text-decoration: underline;
+	line-height: 1.7;
+}
+
+.spreading h2{
+	color: red;
+	text-shadow: 10px 5px 10px #d53b3b;
+}
+
+.way-of-life h2{
+	color: rgb(163, 214, 61);
+	text-shadow: 10px 5px 10px #88df37;
+}
+
+.domestication h2 {
+	color: rgb(5, 178, 175);
+	text-shadow: 10px 5px 10px #3796df;
+}
+
+.links h2{
+	color: red;
+	text-shadow: 10px 5px 10px #d53b3b;
+}
+
+h3{
+	color: #5c99d9;
+	font-weight: bold;
+}
+
+.classification ul li{
+	color: rgb(96, 144, 150);
+	text-decoration: underline;
+	font-size:16px;
+}
+
+.links ul li{
+	color: rgb(58, 56, 186);
+	font-size: 20px;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.navigation ul li{
+	color: #2a977c;
+	text-decoration: underline;
+
+}
+
+.text {
+	color: rgb(122, 120, 120);
+	font-size: 18px;
+	line-height: 1.5;
+	text-indent: 20px;
+}
+
+span{
+	color: #08d7d7;
+	font-weight: bold;
+}
+.wiki a{
+	color: #d53b3b;
+	text-decoration: underline;
+}
+.wiki + a{
+	color: #0955a1;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.spreading .text a{
+	color: #002f95;
+	text-decoration: underline;
+}
+
+.figma a {
+	color: #002f95;
+	font-size: 40px;
+	text-decoration: underline;
+}
+
+h4{
+	font-size: 60px;
+	font-family: "Fuggles", cursive;
+	color: #88df37;
+	font-weight: bold;
+	text-align: center;
+}
+
+h5{
+	font-size: 60px;
+	font-family: "Beer money";
+	color: #3d37df;
+	text-align: center;
+}
+
+h6{
+	font-size: 60px;
+	font-family: "FoglihtenNo06";
+	color: #df3737;
+	text-align: center;
+	
+}
