@@ -1,5 +1,4 @@
 @import url("reset.css");
-
 @import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 @import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
@@ -20,6 +19,7 @@
 	font-weight: 400;
 	font-style: normal;			
 }
+
 
 body{
 	font-family: "Rubik", sans-serif;
@@ -72,7 +72,7 @@ h2{
 
 h3{
 	color: #5c99d9;
-	font-weight: bold;
+	font-weight: 600;
 }
 
 .classification ul li{
@@ -103,7 +103,7 @@ h3{
 
 span{
 	color: #08d7d7;
-	font-weight: bold;
+	font-weight: 600;
 }
 .wiki a{
 	color: #d53b3b;
@@ -130,7 +130,7 @@ h4{
 	font-size: 60px;
 	font-family: "Fuggles", cursive;
 	color: #88df37;
-	font-weight: bold;
+	font-weight: 600;
 	text-align: center;
 }
 
