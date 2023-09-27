@@ -108,7 +108,7 @@ h4 {
 }
 
 .jewels {
-	max-width: 563px;
+	width: 563px;
 	margin-left: 216px;
 	margin-right: 38px;
 }
@@ -138,7 +138,7 @@ h4 {
 
 .jewels,
 .jewels-img {
-	max-width: 568px;
+	width: 568px;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -150,7 +150,6 @@ h4 {
 .practice {
 	background-color: #c8faed;
 	margin-top: 50px;
-	max-width: 100%;
 }
 
 .practice h4 {
