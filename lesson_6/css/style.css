@@ -1,0 +1,297 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+	font-family: "Inter";
+	color: #7d7d7d;
+	font-size: 18px;
+}
+
+.navigation {
+	background-color: #999e9d;
+	max-width: 692px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	padding-top: 20px;
+}
+
+.navigation ul li {
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: underline;
+	color: #38f7c7;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.46;
+}
+.container {
+	max-width: 692px;
+	margin: 0 auto;
+}
+
+.photo-1 {
+	margin-bottom: 37px;
+	max-width: 692px;
+}
+
+.main-title {
+	margin-bottom: 3px;
+	color: #37393f;
+	font-family: "Poppins";
+	font-size: 30px;
+	text-transform: capitalize;
+	font-weight: 600;
+	line-height: 1.27;
+}
+
+.text-1 {
+	margin-bottom: 42px;
+	line-height: 1.46;
+}
+
+.sub-title {
+	margin-bottom: 12px;
+	color: #6b77e5;
+	font-family: "Poppins";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+}
+
+.text-2 {
+	margin-bottom: 39px;
+	line-height: 1.46;
+}
+
+.photo-2 {
+	max-width: 331px;
+	margin-right: 29px;
+}
+
+.section {
+	font-size: 0;
+	margin-bottom: 50px;
+}
+
+.our-benefits {
+	display: inline-block;
+	max-width: 332px;
+}
+
+.benefits-title {
+	margin-bottom: 15px;
+	color: #37393f;
+	font-family: Poppins;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.27;
+}
+
+h4 {
+	margin-bottom: 24px;
+	color: #40ddb6;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+}
+
+.list .list-item {
+	padding-bottom: 35px;
+	font-size: 18px;
+}
+
+.jewellery-container {
+	background-color: #fff9f4;
+	font-size: 0;
+}
+
+.jewels {
+	max-width: 563px;
+	margin-left: 216px;
+	margin-right: 38px;
+}
+
+.jewels-sub-title {
+	color: #d06b00;
+	font-size: 28px;
+	padding-top: 35px;
+	margin-bottom: 13px;
+	text-transform: uppercase;
+}
+
+.jewels-title {
+	color: #0e333d;
+	font-family: DM Serif Text;
+	font-size: 59px;
+	line-height: 1.47;
+	margin-bottom: 30px;
+	text-transform: capitalize;
+}
+
+.jewels p {
+	color: #474747;
+	font-size: 20px;
+	line-height: 1.8;
+}
+
+.jewels,
+.jewels-img {
+	max-width: 568px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.photo-3 {
+	margin-right: 22px;
+}
+
+.practice {
+	background-color: #c8faed;
+	margin-top: 50px;
+	max-width: 100%;
+}
+
+.practice h4 {
+	text-transform: uppercase;
+	color: #474747;
+	font-weight: 600;
+	text-align: center;
+	font-size: 45px;
+	padding-top: 20px;
+	text-shadow: 5px 5px 3px #24639b;
+}
+.padding {
+	background-color: #b0b6ee;
+	max-width: 300px;
+	padding: 30px 20px;
+	margin-bottom: 30px;
+	margin-right: 30px;
+}
+
+.padding p {
+	font-size: 20px;
+	color: #0e333d;
+}
+
+.margin {
+	background-color: #a9da93;
+	max-width: 300px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.margin p {
+	font-size: 20px;
+	color: #167d9a;
+}
+
+.margin-padding,
+.overflow {
+	display: inline-block;
+	vertical-align: top;
+}
+.margin-padding {
+	margin-bottom: 30px;
+}
+
+.overflow {
+	margin-right: 25px;
+}
+
+.scroll {
+	background-color: #d06b00;
+	padding: 15px;
+	max-width: 300px;
+	max-height: 100px;
+	overflow: scroll;
+	margin-bottom: 35px;
+}
+
+.scroll p {
+	font-family: "Poppins";
+	color: #0e333d;
+	line-height: 1.27;
+}
+
+.hidden {
+	background-color: #cacbd6;
+	max-width: 300px;
+	max-height: 100px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	padding-top: 10px;
+}
+
+.hidden p {
+	color: #474747;
+	font-weight: 600;
+	line-height: 1.27;
+}
+
+.auto {
+	background-color: #bf65b6;
+	max-width: 300px;
+	max-height: 100px;
+	overflow: auto;
+	padding: 15px;
+	margin-bottom: 25px;
+}
+
+.auto p {
+	color: #151918;
+}
+
+.clip {
+	background-color: #78d042;
+	max-width: 300px;
+	max-height: 100px;
+	overflow: clip;
+	margin-bottom: 30px;
+	padding: 15px;
+}
+
+.clip p {
+	color: #e5e54f;
+	font-size: 20px;
+}
+
+.tree {
+	vertical-align: bottom;
+	max-width: 400px;
+}
+
+.nature {
+	margin-left: -10%;
+	max-width: 200px;
+	margin-right: 30px;
+}
+
+.nature-1 {
+	max-width: 400px;
+}
+
+.inline {
+	display: inline-block;
+	width: 300px;
+	background-color: #ee3838;
+	padding: 20px;
+	color: #151918;
+	font-size: 22px;
+}
+
+.footer {
+	background-color: #979797;
+	min-height: 100px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.footer a {
+	color: #38a2bd;
+	font-size: 40px;
+	text-transform: capitalize;
+	font-weight: 600;
+	text-shadow: 5px 5px 3px #0d2942;
+}
