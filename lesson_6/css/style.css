@@ -35,14 +35,20 @@ body {
 	max-width: 692px;
 }
 
-.main-title {
-	margin-bottom: 3px;
-	color: #37393f;
+.benefits-title,
+.main-title,
+.sub-title,
+.our-benefits h4 {
 	font-family: "Poppins";
-	font-size: 30px;
-	text-transform: capitalize;
 	font-weight: 600;
 	line-height: 1.27;
+}
+
+.main-title {
+	margin-bottom: 12.5px;
+	color: #37393f;
+	font-size: 30px;
+	text-transform: capitalize;
 }
 
 .text-1 {
@@ -53,10 +59,7 @@ body {
 .sub-title {
 	margin-bottom: 12px;
 	color: #6b77e5;
-	font-family: "Poppins";
 	font-size: 20px;
-	font-weight: 600;
-	line-height: 1.27;
 }
 
 .text-2 {
@@ -82,19 +85,13 @@ body {
 .benefits-title {
 	margin-bottom: 15px;
 	color: #37393f;
-	font-family: Poppins;
 	font-size: 25px;
-	font-weight: 600;
-	line-height: 1.27;
 }
 
-h4 {
+.our-benefits h4 {
 	margin-bottom: 24px;
 	color: #40ddb6;
-	font-family: Poppins;
 	font-size: 20px;
-	font-weight: 600;
-	line-height: 1.27;
 }
 
 .list .list-item {
@@ -123,7 +120,7 @@ h4 {
 
 .jewels-title {
 	color: #0e333d;
-	font-family: DM Serif Text;
+	font-family: "DM Serif Text";
 	font-size: 59px;
 	line-height: 1.47;
 	margin-bottom: 30px;
