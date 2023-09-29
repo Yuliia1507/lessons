@@ -3,7 +3,7 @@
 @import url("reset.css");
 
 body {
-	font-family: "Inter";
+	font-family: "Inter", sans-serif;
 	color: #7d7d7d;
 	font-size: 18px;
 }
@@ -39,7 +39,7 @@ body {
 .main-title,
 .sub-title,
 .our-benefits h4 {
-	font-family: "Poppins";
+	font-family: "Poppins", sans-serif;
 	font-weight: 600;
 	line-height: 1.27;
 }
