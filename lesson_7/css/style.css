@@ -369,6 +369,6 @@ main {
 	font-family: "Cormorant Infant";
 	color: #1196bf;
 	font-size: 30px;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	text-decoration: underline;
 }
