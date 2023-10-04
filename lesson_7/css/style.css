@@ -2,11 +2,6 @@
 
 @import url("reset.css");
 
-header,
-footer {
-	background-color: #a1a8a8;
-}
-
 .container {
 	max-width: 1218px;
 	margin: 0 auto;
@@ -352,6 +347,7 @@ main {
 
 .footer,
 .header {
+	background-color: #a1a8a8;
 	width: 1500px;
 	margin: 0 auto;
 	text-align: center;
