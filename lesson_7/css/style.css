@@ -188,7 +188,7 @@ span {
 }
 
 .jewels-block {
-	width: 1105px;
+	max-width: 1105px;
 	margin: 0 auto;
 	font-size: 0;
 	padding: 70px 0;
