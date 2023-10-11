@@ -23,6 +23,7 @@ header {
 
 .background-practice {
 	background-color: rgba(141, 248, 164, 0.794);
+	margin-bottom: 100px;
 }
 
 .background-practice h1 {
@@ -237,7 +238,6 @@ header {
 	font-size: 20px;
 	color: #696969;
 	line-height: 1.2;
-	margin-bottom: 100px;
 }
 
 .whitecollar-container {
@@ -284,6 +284,10 @@ header {
 
 .paragraph-1 {
 	margin-bottom: 16px;
+}
+
+.vision-box {
+	border: 1px solid #e3e3e3;
 }
 
 .list {
@@ -342,20 +346,17 @@ header {
 	margin-bottom: 37px;
 }
 
-.button {
-	background-color: #6b77e5;
-	max-width: 184px;
-	padding: 22px 27px;
-	display: inline-block;
-	min-height: 65px;
-}
-
 .button a {
 	color: #fff;
 	font-family: "Inter", sans-serif;
 	font-size: 18px;
+	background-color: #6b77e5;
+	max-width: 184px;
 	font-weight: 600;
 	text-transform: capitalize;
+	padding: 22px 27px;
+	min-height: 65px;
+	display: inline-block;
 }
 
 .projects-container {
@@ -367,18 +368,19 @@ header {
 .projects-header {
 	max-width: 852px;
 	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 47px;
 }
 
 .projects-subtitle {
-	max-width: 150px;
-	margin: 0 auto;
 	padding-left: 18px;
 	color: #37393f;
 	font-family: "Inter";
 	font-size: 18px;
 	font-weight: 500;
-	background: url("../img/rectangle\ 8.png") 0 2px no-repeat;
+	background: url("../img/rectangle\ 8.png") 0 2px / 12px 12px no-repeat;
 	margin-bottom: 14px;
+	display: inline-block;
 }
 
 .projects-title {
@@ -399,18 +401,15 @@ header {
 	line-height: 1.46;
 }
 
-.header-text {
-	margin-bottom: 47px;
-}
-
 .project-one-holder {
-	min-width: 384px;
+	max-width: 384px;
 	display: inline-block;
 	margin-right: 34px;
+	width: 100%;
 }
 
 .background-box1 {
-	background: url("../img/project-1.png") no-repeat;
+	background: url("../img/project-1.png") center/ cover no-repeat;
 	min-height: 501px;
 	margin-bottom: 24px;
 }
@@ -437,24 +436,26 @@ header {
 }
 
 .project-two-holder {
-	min-width: 384px;
+	max-width: 384px;
 	display: inline-block;
 	margin-right: 34px;
+	width: 100%;
 }
 
 .background-box2 {
-	background: url("../img/project-2.png") no-repeat;
+	background: url("../img/project-2.png") center/ cover no-repeat;
 	min-height: 501px;
 	margin-bottom: 24px;
 }
 
 .project-three-holder {
-	min-width: 384px;
+	max-width: 384px;
 	display: inline-block;
+	width: 100%;
 }
 
 .background-box3 {
-	background: url("../img/project-3.png") no-repeat;
+	background: url("../img/project-3.png") center/ cover no-repeat;
 	min-height: 501px;
 	margin-bottom: 24px;
 }
@@ -464,36 +465,39 @@ header {
 }
 
 .project-four-holder {
-	min-width: 384px;
+	max-width: 384px;
 	display: inline-block;
 	margin-right: 34px;
+	width: 100%;
 }
 
 .background-box4 {
-	background: url("../img/project-4.png") no-repeat;
+	background: url("../img/project-4.png") center/ cover no-repeat;
 	min-height: 501px;
 	margin-bottom: 24px;
 }
 
 .project-five-holder {
-	min-width: 384px;
+	max-width: 384px;
 	display: inline-block;
 	margin-right: 34px;
+	width: 100%;
 }
 
 .background-box5 {
-	background: url("../img/project-5.png") no-repeat;
+	background: url("../img/project-5.png") center/ cover no-repeat;
 	min-height: 501px;
 	margin-bottom: 24px;
 }
 
 .project-six-holder {
-	min-width: 384px;
+	max-width: 384px;
 	display: inline-block;
+	width: 100%;
 }
 
 .background-box6 {
-	background: url("../img/project-6.png") no-repeat;
+	background: url("../img/project-6.png") center/ cover no-repeat;
 	min-height: 501px;
 	margin-bottom: 24px;
 }
@@ -555,7 +559,7 @@ header {
 
 .everyday-info {
 	width: 613px;
-	padding: 183px 74px 0px 70px;
+	padding: 183px 74px 40px 70px;
 	background: url("../img/leaves-bg.png") center / cover no-repeat;
 	min-height: 640px;
 }
