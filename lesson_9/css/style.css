@@ -423,7 +423,7 @@ main {
 .earrings-link,
 .price {
 	color: #000;
-	font-family: Cormorant Infant;
+	font-family: "Cormorant Infant";
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 1.4;
@@ -439,10 +439,12 @@ main {
 .earrings-link {
 	text-decoration: underline;
 	margin-bottom: 4px;
+	display: inline-block;
 }
 
 .earrings-link:hover {
 	color: #78473b;
+	text-decoration: none;
 }
 
 .collection-2 {
