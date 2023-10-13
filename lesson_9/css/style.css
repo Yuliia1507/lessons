@@ -38,6 +38,7 @@ footer a {
 }
 
 main {
+	padding-left: 15px;
 	margin-bottom: 50px;
 }
 
@@ -346,6 +347,7 @@ main {
 	margin: 0 auto;
 	margin-top: -95px;
 	margin-bottom: 22px;
+	border-radius: 50%;
 }
 
 .consultation-title::before {
@@ -357,6 +359,7 @@ main {
 	margin: 0 auto;
 	margin-top: -95px;
 	margin-bottom: 22px;
+	border-radius: 50%;
 }
 
 .service-title::before {
@@ -368,6 +371,7 @@ main {
 	margin: 0 auto;
 	margin-top: -95px;
 	margin-bottom: 22px;
+	border-radius: 50%;
 }
 
 .work-text {
@@ -416,7 +420,7 @@ main {
 	background-color: #78473b;
 }
 
-.earrings-subtitle,
+.earrings-link,
 .price {
 	color: #000;
 	font-family: Cormorant Infant;
@@ -432,8 +436,13 @@ main {
 	margin-right: 45px;
 }
 
-.earrings-subtitle {
+.earrings-link {
+	text-decoration: underline;
 	margin-bottom: 4px;
+}
+
+.earrings-link:hover {
+	color: #78473b;
 }
 
 .collection-2 {
@@ -454,6 +463,11 @@ main {
 .wrapper-img {
 	border: 1px solid #000;
 	margin-bottom: 25px;
+	transition: 0.5s;
+}
+
+.wrapper-img:hover {
+	transform: scale(1.1);
 }
 
 .earrings {
@@ -498,6 +512,7 @@ main {
 	height: 27px;
 	margin-right: 10px;
 	display: inline-block;
+	border-radius: 50%;
 }
 
 .practice-list li:not(:last-of-type) {
@@ -516,6 +531,7 @@ main {
 	max-width: 500px;
 	margin: 0 auto;
 	margin-bottom: 100px;
+	cursor: pointer;
 }
 
 .hover-img h2 {
@@ -537,18 +553,18 @@ main {
 }
 
 .practice-link {
-	max-width: 300px;
+	max-width: 200px;
 	padding: 10px 0;
 	margin: 0 auto;
 	border: 5px dotted rgb(48, 154, 78);
 	margin-bottom: 100px;
-	text-align: center;
 	font-size: 30px;
 	color: #22d234;
+	text-align: center;
 }
 
 .practice-link a {
-	display: block;
+	display: inline-block;
 }
 
 .practice-link a:not(:last-of-type) {
