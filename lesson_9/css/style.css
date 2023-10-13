@@ -138,6 +138,7 @@ main {
 	display: inline-block;
 	margin-right: 8px;
 	margin-bottom: -6px;
+	border-radius: 50%;
 }
 
 .list-item:hover::before {
@@ -243,6 +244,7 @@ main {
 	display: inline-block;
 	margin-right: 19px;
 	margin-bottom: -6px;
+	border-radius: 50%;
 }
 
 .mission-title::before {
@@ -253,6 +255,7 @@ main {
 	display: inline-block;
 	margin-right: 19px;
 	margin-bottom: -6px;
+	border-radius: 50%;
 }
 
 .vision-text,
