@@ -50,7 +50,6 @@ main {
 
 .image-1 {
 	margin-bottom: 37px;
-	max-width: 692px;
 	max-width: 100%;
 }
 
@@ -131,7 +130,7 @@ main {
 }
 
 .list-item::before {
-	background: url("../img/vector.png") 0 0 no-repeat;
+	background: url("../img/vector.png") 0 0 / contain no-repeat;
 	content: "";
 	width: 27px;
 	height: 27px;
@@ -152,7 +151,7 @@ main {
 .whitecollar-container {
 	max-width: 673px;
 	margin: 0 auto;
-	margin-bottom: 100px;
+	margin-bottom: 150px;
 }
 
 .subtitle-wrap {
@@ -190,7 +189,6 @@ main {
 
 .whitecollar-text {
 	line-height: 1.46;
-	margin-bottom: 48px;
 }
 
 .whitecollar-text p:not(:last-child) {
@@ -205,6 +203,7 @@ main {
 	color: #fff;
 	font-weight: 600;
 	text-transform: capitalize;
+	display: inline-block;
 }
 
 .button:hover {
@@ -212,23 +211,7 @@ main {
 	background-color: #6267b8;
 }
 
-.vision-box,
-.mission-box {
-	max-width: 675px;
-	border: 1px solid #e3e3e3;
-	padding: 28px 41px 28px 38px;
-}
-
-.vision-box {
-	margin-bottom: 31px;
-}
-
-.mission-box {
-	margin-bottom: 48px;
-}
-
-.vision-title,
-.mission-title {
+.box-list-title {
 	color: #37393f;
 	font-family: Poppins;
 	font-size: 20px;
@@ -236,7 +219,7 @@ main {
 	margin-bottom: 12px;
 }
 
-.vision-title::before {
+.box-list-title::before {
 	background: url("../img/vector.png") 0 0 no-repeat;
 	content: "";
 	width: 27px;
@@ -247,27 +230,26 @@ main {
 	border-radius: 50%;
 }
 
-.mission-title::before {
-	background: url("../img/vector.png") 0 0 no-repeat;
-	content: "";
-	width: 27px;
-	height: 27px;
-	display: inline-block;
-	margin-right: 19px;
-	margin-bottom: -6px;
-	border-radius: 50%;
+.box-list-item {
+	padding: 28px 38px;
+	border: 1px solid #e3e3e3;
 }
 
-.vision-text,
-.mission-text {
+.box-list-item:not(:last-child) {
+	margin-bottom: 31px;
+}
+
+.whitecollar-text,
+.whitecollar-list {
+	margin-bottom: 48px;
+}
+
+.box-text {
+	line-height: 1.46;
 	padding-left: 46px;
 }
 
-.vision-text p:not(:last-of-type) {
-	margin-bottom: 16px;
-}
-
-.mission-text p:not(:last-of-type) {
+.box-text p:not(:last-of-type) {
 	margin-bottom: 16px;
 }
 
@@ -278,13 +260,11 @@ main {
 }
 
 .work-header {
-	max-width: 283px;
-	margin: 0 auto;
 	margin-bottom: 77px;
+	text-align: center;
 }
 
 .work-subtitle {
-	text-align: center;
 	margin-bottom: 16px;
 }
 
@@ -309,6 +289,7 @@ main {
 .work-box {
 	max-width: 1240px;
 	margin: 0 auto;
+	padding-top: 40px;
 }
 
 .work-box .box:not(:last-child) {
@@ -342,7 +323,7 @@ main {
 }
 
 .appointment-title::before {
-	background: url("../img/appointement-icon.png") 0 0 no-repeat;
+	background: url("../img/appointement-icon.png") no-repeat;
 	content: "";
 	width: 72px;
 	height: 72px;
@@ -350,11 +331,12 @@ main {
 	margin: 0 auto;
 	margin-top: -95px;
 	margin-bottom: 22px;
+	background-position: center;
 	border-radius: 50%;
 }
 
 .consultation-title::before {
-	background: url("../img/consultation-icon.png") 0 0 no-repeat;
+	background: url("../img/consultation-icon.png") no-repeat;
 	content: "";
 	width: 72px;
 	height: 72px;
@@ -363,10 +345,11 @@ main {
 	margin-top: -95px;
 	margin-bottom: 22px;
 	border-radius: 50%;
+	background-position: center;
 }
 
 .service-title::before {
-	background: url("../img/service-icon.png") 0 0 no-repeat;
+	background: url("../img/service-icon.png") no-repeat;
 	content: "";
 	width: 72px;
 	height: 72px;
@@ -375,6 +358,7 @@ main {
 	margin-top: -95px;
 	margin-bottom: 22px;
 	border-radius: 50%;
+	background-position: center;
 }
 
 .work-text {
@@ -398,9 +382,10 @@ main {
 
 .jewels-container {
 	max-width: 1250px;
+	min-height: 675px;
 	margin: 0 auto;
-	font-size: 0;
 	margin-bottom: 150px;
+	padding: 50px 0;
 }
 
 .jewels-title {
@@ -437,6 +422,8 @@ main {
 	vertical-align: middle;
 	padding-top: 41px;
 	margin-right: 45px;
+	width: 334px;
+	height: 381px;
 }
 
 .earrings-link {
@@ -453,7 +440,8 @@ main {
 .collection-2 {
 	display: inline-block;
 	vertical-align: top;
-	width: 339px;
+	width: 334px;
+	height: 381px;
 }
 
 .collection-subtitle {
@@ -473,11 +461,6 @@ main {
 
 .wrapper-img:hover {
 	transform: scale(1.1);
-}
-
-.earrings {
-	width: 334px;
-	height: 381px;
 }
 
 .wrapper-img img {
