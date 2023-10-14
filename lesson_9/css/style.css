@@ -385,7 +385,6 @@ main {
 	min-height: 675px;
 	margin: 0 auto;
 	margin-bottom: 150px;
-	padding: 50px 0;
 }
 
 .jewels-title {
@@ -440,8 +439,12 @@ main {
 .collection-2 {
 	display: inline-block;
 	vertical-align: top;
-	width: 334px;
-	height: 381px;
+	max-width: 334px;
+	min-height: 381px;
+}
+
+.earrings {
+	width: 100%;
 }
 
 .collection-subtitle {
