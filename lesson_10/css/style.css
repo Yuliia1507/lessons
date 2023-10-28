@@ -1,0 +1,64 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+	background-color: #9f9a9a;
+	font-size: 25px;
+	color: #545756;
+}
+
+header {
+	padding: 25px 0;
+	margin-bottom: 50px;
+	background-color: #545756;
+	text-align: center;
+}
+
+header h2 {
+	color: #90c5d1;
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+h3 {
+	color: #949a9b;
+	font-size: 40px;
+	font-weight: 500;
+}
+
+.image {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+img {
+	margin-right: 15px;
+}
+.image p:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+main {
+	margin-bottom: 50px;
+}
+
+footer {
+	padding: 25px 0;
+	background-color: #545756;
+	text-align: center;
+}
+
+footer a {
+	color: #90c5d1;
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+footer a:hover {
+	text-decoration: none;
+}
