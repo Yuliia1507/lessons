@@ -332,10 +332,6 @@ body {
 	max-width: 100%;
 }
 
-.card__image:not(:last-child) {
-	margin-bottom: 31px;
-}
-
 .card--margin:not(:last-child) {
 	margin-right: 31px;
 }
