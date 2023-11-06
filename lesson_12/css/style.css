@@ -349,8 +349,12 @@ body {
 .card__social {
 	position: absolute;
 	top: 241px;
-	left: 107px;
+	left: 0;
 	visibility: hidden;
+	width: 100%;
+	padding: 0 20px;
+	text-align: center;
+	z-index: 2;
 }
 
 .card:hover .card__social {
@@ -365,8 +369,10 @@ body {
 	height: 100%;
 	opacity: 0;
 	background-color: rgba(107, 119, 229, 0.7);
+	z-index: 1;
 }
-.card__image:hover::before {
+
+.card:hover .card__image::before {
 	opacity: 0.5;
 }
 
