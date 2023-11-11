@@ -351,14 +351,14 @@
 	right: 0;
 	color: #faebd7;
 	text-align: center;
-	padding: 15px;
+	padding-top: 20px;
 	font-size: 18px;
 	background-color: #3c91db;
 	border-radius: 200px 200px 200px 0px;
-	width: 110px;
-	height: 80px;
+	width: 100px;
+	height: 100px;
 	border: 2px dotted grey;
-	transform: translate(30px, -20px);
+	transform: translate(30px, -90px);
 	z-index: 5;
 }
 
@@ -404,31 +404,19 @@
 	0% {
 		opacity: 0;
 	}
-	100% {
+	50% {
 		opacity: 1;
+	}
+	100% {
+		opacity: 0;
 	}
 }
 .phrase-4 {
 	opacity: 0;
-	animation: talk4 5s 16s;
+	animation: talk4 5s 11s;
 }
 
 @keyframes talk4 {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-.phrase-5 {
-	opacity: 0;
-	animation: talk5 5s 32s;
-}
-
-@keyframes talk5 {
 	0% {
 		opacity: 0;
 	}
@@ -439,12 +427,44 @@
 		opacity: 0;
 	}
 }
+
+.phrase-5 {
+	opacity: 0;
+	animation: talk5 5s 18s;
+}
+
+@keyframes talk5 {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
 .phrase-6 {
 	opacity: 0;
-	animation: talk6 5s 37s;
+	animation: talk6 5s 32s;
 }
 
 @keyframes talk6 {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.phrase-7 {
+	opacity: 0;
+	animation: talk7 5s 37s;
+}
+
+@keyframes talk7 {
 	0% {
 		opacity: 0;
 	}
@@ -462,14 +482,14 @@
 	right: 0;
 	color: #faebd7;
 	text-align: center;
-	padding: 15px;
+	padding-top: 20px;
 	font-size: 18px;
-	width: 110px;
-	height: 70px;
+	width: 100px;
+	height: 100px;
 	background-color: #e266f5;
 	border-radius: 200px 200px 0px 200px;
 	border: 2px dotted grey;
-	transform: translate(-220px, -50px);
+	transform: translate(-220px, -90px);
 }
 .first-phrase {
 	opacity: 0;
@@ -489,7 +509,7 @@
 
 .second-phrase {
 	opacity: 0;
-	animation: secondphrase 4s 5s;
+	animation: secondphrase 4s 3s;
 }
 
 @keyframes secondphrase {
@@ -505,7 +525,7 @@
 }
 .third-phrase {
 	opacity: 0;
-	animation: thirdphrase 5s 10s;
+	animation: thirdphrase 5s 11s;
 }
 
 @keyframes thirdphrase {
@@ -522,7 +542,7 @@
 
 .fourth-phrase {
 	opacity: 0;
-	animation: fourthphrase 5s 15s;
+	animation: fourthphrase 5s 17s;
 }
 @keyframes fourthphrase {
 	0% {
