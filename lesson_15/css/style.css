@@ -408,6 +408,7 @@ body {
 	align-items: center;
 	padding-bottom: 29px;
 	border-bottom: 1px solid #edeef2;
+	gap: 10px;
 }
 
 .order-item__image {
