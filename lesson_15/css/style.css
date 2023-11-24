@@ -39,6 +39,7 @@ body {
 	flex: 1 0 95px;
 }
 
+
 .search {
 	padding: 12px 48px;
 	border-radius: 8px;
@@ -106,11 +107,16 @@ body {
 
 .menu__link {
 	padding: 5px;
+	width: 100%;
 }
 
 .header-container__button {
 	display: flex;
 	gap: 29px;
+}
+
+.button {
+	flex-shrink: 0;
 }
 
 .button__link {
@@ -125,7 +131,7 @@ body {
 	color: #fff;
 	background-color: rgba(138, 51, 253, 1);
 	border: 1px solid transparent;
-	transition: all 1s;
+	transition: all 0.3s;
 }
 
 .btn-1:hover {
@@ -137,7 +143,7 @@ body {
 .btn-2 {
 	border: 1px solid #3c4242;
 	color: rgba(138, 51, 253, 1);
-	transition: all 1s;
+	transition: all 0.3s;
 }
 
 .btn-2:hover {
@@ -183,7 +189,7 @@ body {
 .products {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -25px;
+	margin: 0 -25px -50px;
 }
 .products__column {
 	padding: 0 25px;
@@ -202,8 +208,10 @@ body {
 	overflow: hidden;
 	border-radius: 10px;
 	position: relative;
-	width: 273px;
-	height: 393px;
+}
+
+.item-product__image img {
+	width: 100%;
 }
 
 .item-product__image::before {
@@ -216,17 +224,13 @@ body {
 	opacity: 0;
 	background-color: rgba(170, 177, 245, 0.371);
 	z-index: 1;
-	transition: all 1s;
+	transition: all 0.3s;
 }
 
 .item-product__image:hover::before {
 	opacity: 1;
 }
 
-.item-product__image img {
-	width: 100%;
-	height: 100%;
-}
 .item-product__image:not(:last-child) {
 	margin-bottom: 15px;
 }
@@ -254,7 +258,7 @@ body {
 	font-weight: 700;
 	line-height: 1.56;
 	letter-spacing: -0.715px;
-	transition: all 1s;
+	transition: all 0.3s;
 }
 
 .item-product__link-title:hover {
@@ -283,7 +287,6 @@ body {
 
 .wishlist__block {
 	display: flex;
-	flex-wrap: wrap;
 	align-items: center;
 	gap: 36px;
 	padding-bottom: 29px;
@@ -310,6 +313,8 @@ body {
 
 .block-wishlist__image img {
 	width: 100%;
+	height: 100%;
+	border-radius: 4px;
 }
 
 .block-wishlist__body {
@@ -317,7 +322,7 @@ body {
 	letter-spacing: 0.44px;
 	font-weight: 700;
 	font-size: 22px;
-	flex: 1 1 auto;
+	flex: 1 0 auto;
 }
 
 .block-wishlist__body > *:not(:last-child) {
@@ -327,6 +332,13 @@ body {
 .grey-color {
 	font-weight: 500;
 	color: #807d7e;
+}
+
+.block-wishlist__item {
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
+	gap: 50px;
 }
 
 .block-wishlist__price {
@@ -393,7 +405,6 @@ body {
 
 .order-item {
 	display: flex;
-	flex-wrap: wrap;
 	align-items: center;
 	padding-bottom: 29px;
 	border-bottom: 1px solid #edeef2;
@@ -408,13 +419,15 @@ body {
 
 .order-item__image img {
 	width: 100%;
+	height: 100%;
+	border-radius: 4px;
 }
 
 .order-item__body {
 	color: #3c4242;
 	font-size: 14px;
 	font-weight: 600;
-	flex: 1 1 auto;
+	flex: 1 0 auto;
 }
 
 .content-body__name {
