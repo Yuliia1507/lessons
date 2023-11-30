@@ -66,8 +66,7 @@
 						</div>
 						<div class="form__item">
 							<label for="message">Delivery Instruction</label><br>
-							<textarea required type="text" id="message" name="delivery"
-								placeholder="Delivery Instruction"></textarea>
+							<textarea required id="message" name="delivery" placeholder="Delivery Instruction"></textarea>
 						</div>
 					</div>
 					<div class="form__checkbox checkbox">
@@ -88,7 +87,7 @@
 				<div class="page__checkout checkout">
 					<h2 class="checkout__title title title--before">Check Out</h2>
 					<h3 class="checkout__subtitle subtitle subtitle--margin">Billing Details</h3>
-					<form class="checkout__form form-checkout" action="">
+					<form class="checkout__form form-checkout" method="GET" enctype="multipart/form-data" action="#">
 						<div class="form-checkout__body">
 							<div class="form-checkout__item">
 								<label for="firstname">First name*</label><br>
