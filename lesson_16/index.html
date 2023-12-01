@@ -33,7 +33,7 @@
 						</div>
 						<div class="form__item">
 							<label for="company">Company Name</label><br>
-							<input type="text" id="company" name="company" placeholder="Company (optional)">
+							<input required type="text" id="company" name="company" placeholder="Company (optional)">
 						</div>
 						<div class="form__item">
 							<label for="street">Street Address*</label><br>
@@ -41,7 +41,7 @@
 						</div>
 						<div class="form__item">
 							<label for="apartment">Apt, suite, unit</label><br>
-							<input type="text" id="apartment" name="apartment"
+							<input required type="text" id="apartment" name="apartment"
 								placeholder="apartment, suite, unit, etc. (optional)">
 						</div>
 						<div class="form__item">
@@ -50,7 +50,7 @@
 						</div>
 						<div class="form__item">
 							<label for="state">State*</label><br>
-							<select id="state" name="list">
+							<select required id="state" name="list">
 								<option value="">State</option>
 								<option value="">State</option>
 								<option value="">State</option>
@@ -103,7 +103,7 @@
 							</div>
 							<div class="form-checkout__item">
 								<label for="companyname">Company Name</label><br>
-								<input type="text" id="companyname" name="company" placeholder="Company (optional)">
+								<input required type="text" id="companyname" name="company" placeholder="Company (optional)">
 							</div>
 							<div class="form-checkout__item">
 								<label for="streetadd">Street Address*</label><br>
@@ -112,7 +112,7 @@
 							</div>
 							<div class="form-checkout__item">
 								<label for="suite">Apt, suite, unit</label><br>
-								<input type="text" id="suite" name="apartment"
+								<input required type="text" id="suite" name="apartment"
 									placeholder="apartment, suite, unit, etc. (optional)">
 							</div>
 							<div class="form-checkout__row row-block">
@@ -122,7 +122,7 @@
 								</div>
 								<div class="form-checkout__item row-block__item">
 									<label for="statename">State*</label><br>
-									<select id="statename" name="list">
+									<select required id="statename" name="list">
 										<option value="">State</option>
 										<option value="">State</option>
 										<option value="">State</option>
@@ -153,25 +153,21 @@
 				<div class="page__shipping shipping-address">
 					<div class="shipping-address__title-block">
 						<h3 class="shipping-address__subtitle subtitle ">Shipping Address</h3>
-						<span class="shipping-address__text">Select the address that matches your card or payment
-							method.</span>
+						<legend class="shipping-address__text">Select the address that matches your card or payment
+							method.</legend>
 					</div>
 					<div class="shipping-address__radio radio-block">
-						<form class="radio-block__form" method="GET" enctype="multipart/form-data" action="#">
-							<div class="radio-block__wrap">
-								<div class="radio-block__item">
-									<input checked class="radio-block__input" value="same" id="billing" name="address"
-										type="radio">
-									<label class="radio-block__label" for="billing">Same as Billing address</label>
-								</div>
-								<div class="radio-block__item">
-									<input class="radio-block__input" value="different" id="different-address" name="address"
-										type="radio">
-									<label class="radio-block__label" for="different-address">Use a different shipping
-										address</label>
-								</div>
+						<fieldset class="radio-block__form" method="GET" enctype="multipart/form-data" action="#">
+							<div class="radio-block__item">
+								<input checked class="radio-block__input" value="same" id="billing" name="address" type="radio">
+								<label class="radio-block__label" for="billing">Same as Billing address</label>
 							</div>
-						</form>
+							<div class="radio-block__item">
+								<input class="radio-block__input" value="different" id="different-address" name="address"
+									type="radio">
+								<label class="radio-block__label" for="different-address">Use a different shipping address</label>
+							</div>
+						</fieldset>
 					</div>
 				</div>
 			</div>

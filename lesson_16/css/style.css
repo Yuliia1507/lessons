@@ -139,11 +139,9 @@ label {
 	outline: 2px solid rgba(190, 188, 189, 1);
 	border-radius: 3px;
 }
-.checkbox__input:focus-visible + .checkbox__label {
-	outline: 1px solid rgb(129, 128, 128);
-}
+
 .checkbox__input:checked + .checkbox__label::before {
-	background-color: #9c6ce2;
+	background: url(..//img/check-box.svg) center / cover no-repeat;
 }
 
 .form__checkbox {
@@ -299,10 +297,10 @@ label {
 	background: #f6f6f6;
 	min-height: 175px;
 	flex-shrink: 0;
-	padding: 38px 0px 39px 28px;
+	padding: 38px 48px 39px 28px;
 }
 
-.radio-block__wrap {
+.radio-block__form {
 	position: relative;
 }
 
@@ -330,29 +328,26 @@ input[type="radio"] {
 	position: relative;
 	display: inline-flex;
 	gap: 19px;
-	align-items: center;
 }
 
 .radio-block__label::before {
 	content: "";
 	position: absolute;
-	flex: 0 0 18px;
+	flex-shrink: 0;
+	width: 18px;
 	height: 18px;
-	border: 2px solid rgb(119, 119, 119);
+	border: 1px solid rgb(119, 119, 119);
 	border-radius: 50%;
-	margin-right: 19px;
-}
-
-.radio-block__input:checked + .radio-block__label::before {
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	border: 2px solid rgb(242, 250, 250);
-	background-color: #696666;
+	transition: 0.3s;
 }
 
 .radio-block__input:focus-visible + .radio-block__label {
 	outline: 1px solid rgb(129, 128, 128);
+}
+
+.radio-block__input:checked + .radio-block__label::before {
+	background: url("../img/radio_button.svg") center / cover no-repeat;
+	border: none;
 }
 
 .footer {
