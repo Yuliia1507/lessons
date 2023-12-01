@@ -153,11 +153,11 @@
 				<div class="page__shipping shipping-address">
 					<div class="shipping-address__title-block">
 						<h3 class="shipping-address__subtitle subtitle ">Shipping Address</h3>
-						<legend class="shipping-address__text">Select the address that matches your card or payment
-							method.</legend>
+						<span class="shipping-address__text">Select the address that matches your card or payment
+							method.</span>
 					</div>
 					<div class="shipping-address__radio radio-block">
-						<fieldset class="radio-block__form" method="GET" enctype="multipart/form-data" action="#">
+						<form class="radio-block__form" method="GET" enctype="multipart/form-data" action="#">
 							<div class="radio-block__item">
 								<input checked class="radio-block__input" value="same" id="billing" name="address" type="radio">
 								<label class="radio-block__label" for="billing">Same as Billing address</label>
@@ -165,9 +165,10 @@
 							<div class="radio-block__item">
 								<input class="radio-block__input" value="different" id="different-address" name="address"
 									type="radio">
-								<label class="radio-block__label" for="different-address">Use a different shipping address</label>
+								<label class="radio-block__label" for="different-address">Use a different shipping
+									address</label>
 							</div>
-						</fieldset>
+						</form>
 					</div>
 				</div>
 			</div>
