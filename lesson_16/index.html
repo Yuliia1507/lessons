@@ -133,7 +133,7 @@
 									<input required type="text" id="postalcode" name="postal-code" placeholder="Postal Code">
 								</div>
 							</div>
-							<div class="form-checkout__item">
+							<div class="form-checkout__item form-checkout__item--width">
 								<label for="phonenumber">Phone*</label><br>
 								<input required type="tel" id="phonenumber" name="phone" placeholder="Phone">
 							</div>
@@ -141,7 +141,37 @@
 						<div class="form-checkout__button">
 							<button type="submit">Continue to delivery</button>
 						</div>
+						<div class="checkbox">
+							<div class="checkbox__item">
+								<input class="checkbox__input" id="saveinfo" name="save info" type="checkbox">
+								<label class="checkbox__label checkbox__label--style" for="saveinfo">Save my information for a
+									faster checkout</label>
+							</div>
 					</form>
+				</div>
+				<div class="page__shipping shipping-address">
+					<div class="shipping-address__title-block">
+						<h3 class="shipping-address__subtitle subtitle ">Shipping Address</h3>
+						<span class="shipping-address__text">Select the address that matches your card or payment
+							method.</span>
+					</div>
+					<div class="shipping-address__radio radio-block">
+						<form class="radio-block__form" action="">
+							<div class="radio-block__wrap">
+								<div class="radio-block__item">
+									<input checked class="radio-block__input" value="same" id="billing" name="address"
+										type="radio">
+									<label class="radio-block__label" for="billing">Same as Billing address</label>
+								</div>
+								<div class="radio-block__item">
+									<input class="radio-block__input" value="different" id="different-address" name="address"
+										type="radio">
+									<label class="radio-block__label" for="different-address">Use a different shipping
+										address</label>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</main>
