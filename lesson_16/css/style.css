@@ -527,11 +527,16 @@ input[type="radio"] {
 .button-contact button {
 	padding: 21px 61px 22px 61px;
 	align-items: center;
-	background: #6b77e5;
+	background-color: #6b77e5;
 	color: #fff;
 	text-align: center;
 	font-weight: 600;
 	text-transform: capitalize;
+	transition: background-color 0.3s;
+}
+
+.button-contact:hover button {
+	background-color: #6703e1;
 }
 
 .footer {
