@@ -275,7 +275,14 @@ body {
 		margin-bottom: -1px;
 	}
 }
-
+@media (max-width: 479.98px) {
+	.header__logo {
+		font-size: 24px;
+	}
+	.action-header {
+		gap: 10px;
+	}
+}
 .hero {
 	background-color: #502203;
 	padding: 200px 0px 55px 0px;
