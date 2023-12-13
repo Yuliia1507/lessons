@@ -35,10 +35,10 @@ body {
 }
 .header__container {
 	display: flex;
-	gap: 20px;
+	gap: 15px;
 	align-items: center;
 	min-height: 100px;
-	padding: 5px 15px;
+	padding-top: 5px;
 }
 .header__logo {
 	font-size: 30px;
