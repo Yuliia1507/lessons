@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cabin:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,600&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@font-face {
+  font-family: "Causten";
+  src: url(../fonts/Causten-Medium.woff2) format("woff2"), url(../fonts/Causten-Medium.woff) format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Causten";
+  src: url(../fonts/causten-semi-bold.woff2) format("woff2"), url(../fonts/causten-semi-bold.woff) format("woff");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Causten";
+  src: url(../fonts/causten-bold.woff2) format("woff2"), url(../fonts/causten-bold.woff) format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url(../fonts/CoreSansC-55Medium.woff2) format("woff2"), url(../fonts/CoreSansC-55Medium.woff) format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url(../fonts/CoreSansC-65Bold.woff2) format("woff2"), url(../fonts/CoreSansC-65Bold.woff) format("woff");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url(../fonts/CoreSansC-85Heavy.woff2) format("woff2"), url(../fonts/CoreSansC-85Heavy.woff) format("woff");
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+.wrapper {
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.wrapper main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 100px;
+}
+
+[class*=__container] {
+  margin: 0 auto;
+  max-width: 1270px;
+  padding: 0 15px;
+}
+
+.header {
+  border-bottom: 1px solid #bebcbd;
+}
+.header__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px 0;
+  -webkit-column-gap: 76px;
+     -moz-column-gap: 76px;
+          column-gap: 76px;
+  row-gap: 10px;
+}
+.header__form {
+  position: relative;
+}
+.header__form input {
+  padding: 12px 0px 12px 45px;
+  border-radius: 8px;
+  background-color: #f6f6f6;
+}
+.header__form input::-webkit-input-placeholder {
+  color: #807d7e;
+  font-family: "Causten";
+  font-size: 16px;
+  padding-left: 12px;
+}
+.header__form input::-moz-placeholder {
+  color: #807d7e;
+  font-family: "Causten";
+  font-size: 16px;
+  padding-left: 12px;
+}
+.header__form input:-ms-input-placeholder {
+  color: #807d7e;
+  font-family: "Causten";
+  font-size: 16px;
+  padding-left: 12px;
+}
+.header__form input::-ms-input-placeholder {
+  color: #807d7e;
+  font-family: "Causten";
+  font-size: 16px;
+  padding-left: 12px;
+}
+.header__form input::placeholder {
+  color: #807d7e;
+  font-family: "Causten";
+  font-size: 16px;
+  padding-left: 12px;
+}
+.header__form input:focus {
+  outline: 1px solid grey;
+}
+.header__form a {
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.header__form a:hover svg {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.header__form a svg {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.header__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+.header__actions a {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #f6f6f6;
+}
+.header__actions a:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.header__actions img {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.logo {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 15px;
+}
+.menu__item:hover .menu__link {
+  color: #3c4242;
+}
+.menu__link {
+  font-family: "Causten";
+  color: #807d7e;
+  font-size: 22px;
+  font-weight: 500;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.hero {
+  position: relative;
+  max-width: 100%;
+  min-height: 716px;
+  background-image: url(..//img/hero-bg.jpg);
+  background-color: rgb(119, 194, 255);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.hero svg {
+  position: absolute;
+  z-index: 3;
+  bottom: 49px;
+  left: 50%;
+}
+.hero__pre-button, .hero__nxt-button {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24px;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.hero__pre-button img, .hero__nxt-button img {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+@media (any-hover: hover) {
+  .hero__pre-button:hover img, .hero__nxt-button:hover img {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+.hero__pre-button {
+  margin-left: 40px;
+}
+.hero__nxt-button {
+  right: 0;
+  margin-right: 40px;
+}
+
+.content-hero {
+  max-width: 550px;
+  padding: 129px 0 132px 84px;
+  color: #fff;
+}
+.content-hero__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.content-hero__label {
+  font-family: Core Sans C;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 37.771px;
+  letter-spacing: 0.157px;
+  text-transform: capitalize;
+}
+.content-hero__label--text {
+  text-transform: lowercase;
+  line-height: 47.214px;
+  letter-spacing: 0.315px;
+}
+.content-hero__title {
+  font-family: Core Sans C;
+  font-size: 78px;
+  font-weight: 800;
+  line-height: 93.622px;
+  letter-spacing: 0.315px;
+}
+.content-hero__button {
+  color: #3c4242;
+  padding: 16px 72px;
+  font-family: "Causten";
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 8px;
+  background-color: #fff;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+@media (any-hover: hover) {
+  .content-hero__button:hover {
+    background-color: #afddf5;
+  }
+}

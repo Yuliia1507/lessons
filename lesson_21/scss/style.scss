@@ -1,0 +1,257 @@
+@import "_reset.scss";
+
+@import "_fonts.scss";
+
+.wrapper {
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.wrapper main {
+	flex-grow: 1;
+}
+$caustenFamily: "Causten";
+$textWhite: #fff;
+$textDark: #37393f;
+$textGrey: #807d7e;
+$headerHover: #3c4242;
+$breakpointL: 1250px;
+$breakpointM: 960px;
+$breakpointS: 479.98px;
+$normal: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+
+body {
+}
+.page {
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+}
+[class*="__container"] {
+	margin: 0 auto;
+	max-width: 1270px;
+	padding: 0 15px;
+}
+.header {
+	border-bottom: 1px solid #bebcbd;
+	// .header__container
+
+	&__container {
+	}
+
+	// .header__wrap
+
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 32px 0;
+		column-gap: 76px;
+		row-gap: 10px;
+	}
+
+	// .header__logo
+
+	&__logo {
+	}
+
+	// .header__menu
+
+	&__menu {
+	}
+
+	// .header__form
+
+	&__form {
+		position: relative;
+		input {
+			padding: 12px 0px 12px 45px;
+			border-radius: 8px;
+			background-color: #f6f6f6;
+			&::placeholder {
+				color: #807d7e;
+				font-family: "Causten";
+				font-size: 16px;
+				padding-left: 12px;
+			}
+			&:focus {
+				outline: 1px solid grey;
+			}
+		}
+		a {
+			position: absolute;
+			left: 0;
+			margin-left: 20px;
+			margin-top: 10px;
+			&:hover svg {
+				transform: scale(1.1);
+			}
+			svg {
+				transition: all 0.3s;
+			}
+		}
+	}
+
+	// .header__actions
+
+	&__actions {
+		display: flex;
+		gap: 12px;
+		a {
+			padding: 12px;
+			border-radius: 8px;
+			background-color: #f6f6f6;
+			&:hover img {
+				transform: scale(1.1);
+			}
+		}
+		img {
+			transition: transform 0.3s;
+		}
+	}
+}
+.logo {
+	flex-grow: 1;
+}
+.menu {
+	// .menu__body
+
+	&__body {
+	}
+
+	// .menu__list
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 40px;
+		row-gap: 15px;
+	}
+
+	// .menu__item
+
+	&__item {
+		&:hover .menu__link {
+			color: #3c4242;
+		}
+	}
+
+	// .menu__link
+
+	&__link {
+		font-family: "Causten";
+		color: $textGrey;
+		font-size: 22px;
+		font-weight: $medium;
+		transition: color 0.3s;
+	}
+}
+.hero {
+	position: relative;
+	max-width: 100%;
+	min-height: 716px;
+	background-image: url(..//img/hero-bg.jpg);
+	background-color: rgb(119, 194, 255);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	// .hero__container
+	svg {
+		position: absolute;
+		z-index: 3;
+		bottom: 49px;
+		left: 50%;
+	}
+	&__container {
+	}
+
+	// .hero__content
+
+	&__content {
+	}
+	&__pre-button,
+	&__nxt-button {
+		position: absolute;
+		top: 0;
+		display: flex;
+		width: 24px;
+		height: 100%;
+		align-items: center;
+		flex-shrink: 0;
+		img {
+			transition: transform 0.3s;
+		}
+		@media (any-hover: hover) {
+			&:hover img {
+				transform: scale(1.2);
+			}
+		}
+	}
+	&__pre-button {
+		margin-left: 40px;
+	}
+	&__nxt-button {
+		right: 0;
+		margin-right: 40px;
+	}
+}
+.content-hero {
+	max-width: 550px;
+	padding: 129px 0 132px 84px;
+	color: $textWhite;
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		margin-bottom: 40px;
+	}
+	// .content-hero__label
+
+	&__label {
+		font-family: Core Sans C;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 37.771px;
+		letter-spacing: 0.157px;
+		text-transform: capitalize;
+		&--text {
+			text-transform: lowercase;
+			line-height: 47.214px;
+			letter-spacing: 0.315px;
+		}
+	}
+
+	// .content-hero__title
+
+	&__title {
+		font-family: Core Sans C;
+		font-size: 78px;
+		font-weight: 800;
+		line-height: 93.622px;
+		letter-spacing: 0.315px;
+	}
+
+	// .content-hero__button
+
+	&__button {
+		color: #3c4242;
+		padding: 16px 72px;
+		font-family: "Causten";
+		font-size: 24px;
+		font-weight: 700;
+		border-radius: 8px;
+		background-color: #fff;
+		transition: background-color 0.3s;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #afddf5;
+			}
+		}
+	}
+}
