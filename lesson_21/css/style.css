@@ -1179,9 +1179,6 @@ textarea {
   color: #fff;
   width: 613px;
   font-family: "Causten";
-  -webkit-box-flex: 1 1 auto;
-      -ms-flex-positive: 1 1 auto;
-          flex-grow: 1 1 auto;
   padding: 184px 74px 174px 74px;
 }
 @media (max-width: 991.98px) {
