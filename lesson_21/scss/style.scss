@@ -1222,6 +1222,9 @@ body {
 		border-radius: 12px;
 		border: 1px solid $textColor;
 		background-color: $textColor;
+		@media (max-width: $breakpointL) {
+			border-radius: 0px;
+		}
 	}
 
 	&__body {

@@ -1417,6 +1417,11 @@ textarea {
   border: 1px solid #3c4242;
   background-color: #3c4242;
 }
+@media (max-width: 1250px) {
+  .brand-deals__container {
+    border-radius: 0px;
+  }
+}
 .brand-deals__body {
   padding-top: 44px;
   padding-bottom: 60px;
