@@ -15,8 +15,8 @@
 }
 $bgBlack: #000;
 $bgActions: #f6f6f6;
-$headerBurger: rgba(137, 185, 249, 0.901);
-$bgBurger: #cae3fffb;
+$headerBurger: #89b9f9;
+$bgBurger: #a5cbf6;
 $bgWhite: #fff;
 $linkBg: #666;
 $colorGrey: #7f7f7f;
@@ -313,7 +313,7 @@ body {
 		height: 100%;
 		z-index: -2;
 		@media (max-width: $breakpointM) {
-			object-position: 80% 0;
+			object-position: 65% 0;
 		}
 	}
 	&__indicator {
@@ -321,6 +321,9 @@ body {
 		z-index: 1;
 		bottom: 49px;
 		left: 45%;
+		@media (max-width: $breakpointS) {
+			left: 30%;
+		}
 	}
 	&__container {
 	}
@@ -502,7 +505,7 @@ body {
 		max-width: 269px;
 		height: 100%;
 		position: relative;
-		z-index: 2;
+		z-index: 1;
 		@media (max-width: $breakpointXS) {
 			max-width: 100%;
 		}
