@@ -2,17 +2,6 @@
 
 @import "_fonts.scss";
 
-.wrapper {
-	overflow: clip;
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-}
-.wrapper {
-	main {
-		flex-grow: 1;
-	}
-}
 $bgColor: #37393f;
 $purpleColor: #6b77e5;
 $greenColor: #40ddb6;
@@ -28,6 +17,16 @@ $normal: 400;
 $medium: 500;
 $semiBold: 600;
 $bold: 700;
+
+.wrapper {
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	main {
+		flex-grow: 1;
+	}
+}
 
 body {
 	font-family: $fontFamily;
