@@ -2,17 +2,7 @@
 
 @import "_fonts.scss";
 
-.wrapper {
-	overflow: clip;
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-}
-.wrapper {
-	main {
-		flex-grow: 1;
-	}
-}
+
 $bgBlack: #000;
 $bgActions: #f6f6f6;
 $headerBurger: #89b9f9;
@@ -30,6 +20,18 @@ $breakpointL: 1250px;
 $breakpointM: 991.98px;
 $breakpointS: 767.98px;
 $breakpointXS: 479.98px;
+
+.wrapper {
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	main {
+		flex-grow: 1;
+	}
+}
+
+
 
 body {
 }
