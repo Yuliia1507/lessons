@@ -1,0 +1,51 @@
+@import "_reset.scss";
+
+@import "_fonts.scss";
+
+[class*="__container"] {
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 50px 15px;
+}
+
+.page {
+	&__container {
+		p {
+			color: rgb(0, 106, 255);
+			font-size: 20px;
+			margin-bottom: 20px;
+			line-height: 140%;
+		}
+		a {
+			font-size: 35px;
+			transition: color 0.3s;
+			margin-bottom: 20px;
+		}
+		ul {
+			margin-bottom: 30px;
+			li {
+				font-size: 25px;
+				&:not(:last-child) {
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}
+
+.button {
+	padding: 20px 37px;
+	background-color: #228000;
+	color: white;
+	font-size: 18px;
+	transition: background-color 0.3s;
+	&:hover {
+		background-color: #71f171;
+	}
+}
+.item {
+	font-size: 25px;
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+}
