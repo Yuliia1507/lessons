@@ -80,7 +80,7 @@ allItems.forEach((item, index) => {
  */
 document.addEventListener('DOMContentLoaded', function () {
 	/* Отримуємо посилання на кнопку за допомогою querySelector*/
-	let button = document.querySelector('.button');
+	const button = document.querySelector('.button');
 
 	/*Прокручуємо сторінку до кнопки, параметр { behavior: 'smooth' } додає плавну анімацію прокрутки.*/
 	button.scrollIntoView({ behavior: 'smooth' });
