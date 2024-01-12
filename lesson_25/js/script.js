@@ -78,13 +78,13 @@ allItems.forEach((item, index) => {
 Дано в html: текст, далі кнопка з класом button.
 Треба прокрутити скрол сторінки до кнопки
  */
-function scrollToButton() {
-	/* Отримуємо елемент кнопки за класом*/
-	const button = document.querySelector('.button');
+document.addEventListener('DOMContentLoaded', function () {
+	/* Отримуємо посилання на кнопку за допомогою querySelector*/
+	var button = document.querySelector('.button');
 
-	/* Викликаємо метод scrollIntoView(), щоб прокрутити до кнопки, параметр { behavior: 'smooth' } робить прокрутку більш плавною.*/
+	/*Прокручуємо сторінку до кнопки, параметр { behavior: 'smooth' } додає плавну анімацію прокрутки.*/
 	button.scrollIntoView({ behavior: 'smooth' });
-}
+});
 
 /*=================================================
 Задача №6
