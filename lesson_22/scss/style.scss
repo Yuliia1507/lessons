@@ -759,7 +759,7 @@ body {
 			content: "";
 			width: toRem(12);
 			height: toRem(12);
-			flex-shrink: 0 0 toRem(12);
+			flex: 0 0 toRem(12);
 			background-color: $greenColor;
 		}
 	}
@@ -962,7 +962,7 @@ body {
 	&__text {
 		display: flex;
 		flex-direction: column;
-		gap: toRem(2px);
+		gap: toRem(2);
 	}
 }
 .text {

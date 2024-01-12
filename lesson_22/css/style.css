@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400, 600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cabin:600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap");
 *,
@@ -926,8 +926,9 @@ body {
   content: "";
   width: 0.75rem;
   height: 0.75rem;
-  -ms-flex-negative: 0 0 0.75rem;
-      flex-shrink: 0 0 0.75rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 0.75rem;
+          flex: 0 0 0.75rem;
   background-color: #40ddb6;
 }
 .header-whitecollar__title, .subscribe__title {
@@ -1122,7 +1123,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 0.125pxrem;
+  gap: 0.125rem;
 }
 
 .text__item-1 {
