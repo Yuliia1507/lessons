@@ -540,7 +540,7 @@ body {
 .hero {
   font-family: "Inter";
   color: #fff;
-  background: url("../img/hero-image.jpg") center/cover no-repeat;
+  background: url("../img/hero-image.webp") center/cover no-repeat;
   min-height: 100svh;
 }
 @media (max-width: 60em) {
