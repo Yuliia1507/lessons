@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cabin:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,600&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+body {
+  color: #ffffff;
+  font-size: 35px;
+}
+
+.wrapper {
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+.wrapper main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 120px 15px 15px 15px;
+}
+
+.transparent {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.opaque {
+  background-color: rgb(128, 128, 128);
+}
+
+.header,
+.footer {
+  padding: 15px 0;
+  text-align: center;
+  font-size: 55px;
+  min-height: 100px;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: aqua;
+}
+.header:hover {
+  cursor: pointer;
+}
+
+.item {
+  color: blue;
+}
+
+.footer {
+  background-color: #0e5656;
+}
+
+.some-item {
+  text-align: center;
+  color: #37f72d;
+  font-size: 70px;
+}

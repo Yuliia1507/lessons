@@ -1,0 +1,57 @@
+@import "_reset.scss";
+
+@import "_fonts.scss";
+
+body {
+	color: #ffffff;
+	font-size: 35px;
+}
+
+.wrapper {
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	main {
+		flex-grow: 1;
+		padding: 120px 15px 15px 15px;
+	}
+}
+
+.transparent {
+	background-color: rgba(128, 128, 128, 0.5);
+}
+
+.opaque {
+	background-color: rgb(128, 128, 128);
+}
+
+.header,
+.footer {
+	padding: 15px 0;
+	text-align: center;
+	font-size: 55px;
+	min-height: 100px;
+}
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: aqua;
+	&:hover {
+		cursor: pointer;
+	}
+}
+.item {
+	color: blue;
+}
+
+.footer {
+	background-color: #0e5656;
+}
+
+.some-item {
+	text-align: center;
+	color: #37f72d;
+	font-size: 70px;
+}
