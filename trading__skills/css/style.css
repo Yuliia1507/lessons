@@ -320,7 +320,6 @@ body.menu-open {
 .header__text {
   max-width: 650px;
   line-height: 110%;
-  letter-spacing: -2%;
   color: white;
   opacity: 0;
   -webkit-transform: translateY(-30px);
@@ -385,7 +384,6 @@ body.menu-open {
 .text {
   color: rgb(255, 255, 255);
   line-height: 140%;
-  letter-spacing: -1%;
 }
 @media (min-width: 116.875em) {
   .text {
@@ -763,7 +761,6 @@ body.menu-open {
 
 .title {
   line-height: 110%;
-  letter-spacing: -2%;
 }
 @media (min-width: 116.875em) {
   .title {
@@ -1498,7 +1495,6 @@ body.menu-open {
 .form__item label {
   color: rgba(255, 255, 255, 0.4);
   line-height: 140%;
-  letter-spacing: -1%;
   padding-left: 15px;
 }
 @media (min-width: 116.875em) {
