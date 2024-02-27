@@ -373,12 +373,15 @@ body {
 
 //======================================================================
 .submit {
-	background: linear-gradient(78deg, rgb(11, 33, 59) 0%, rgba(25, 34, 48, 1) 100%);
-
-	@include adaptiveValue("padding-top", 50, 15);
-	@include adaptiveValue("padding-right", 40, 0);
-	@include adaptiveValue("padding-left", 40, 0);
-	@include adaptiveValue("padding-bottom", 40, 10);
+	&__container {
+	}
+	&__content {
+		background: linear-gradient(78deg, rgb(11, 33, 59) 0%, rgba(25, 34, 48, 1) 100%);
+		@include adaptiveValue("padding-top", 50, 15);
+		@include adaptiveValue("padding-right", 40, 0);
+		@include adaptiveValue("padding-left", 40, 0);
+		@include adaptiveValue("padding-bottom", 40, 10);
+	}
 	// .submit__title
 
 	&__title {
