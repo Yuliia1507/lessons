@@ -313,8 +313,8 @@ body {
 		display: grid;
 		@include adaptiveValue("gap", 50, 30);
 		@include adaptiveValue("padding-top", 50, 15);
-		@include adaptiveValue("padding-right", 130, 15);
-		@include adaptiveValue("padding-left", 60, 15);
+		@include adaptiveValue("padding-right", 130, 10);
+		@include adaptiveValue("padding-left", 60, 10);
 		@include adaptiveValue("padding-bottom", 60, 20);
 		background: linear-gradient(78deg, rgb(16, 47, 85) 0%, rgba(25, 34, 48, 1) 100%);
 	}
@@ -343,7 +343,7 @@ body {
 	// .info-contact__text
 
 	&__text {
-		@include adaptiveValue("font-size", 30, 20);
+		@include adaptiveValue("font-size", 30, 18);
 	}
 
 	&__item {
