@@ -163,13 +163,13 @@ body {
 		@include adaptiveValue("margin-bottom", 70, 25);
 	}
 	&__container {
-		&--background {
-			@include adaptiveValue("padding-top", 50, 15);
-			@include adaptiveValue("padding-right", 40, 0);
-			@include adaptiveValue("padding-left", 40, 0);
-			@include adaptiveValue("padding-bottom", 40, 10);
-			background: linear-gradient(78deg, rgb(75, 17, 17) 0%, rgba(25, 34, 48, 1) 100%);
-		}
+	}
+	&__content {
+		background: linear-gradient(78deg, rgb(75, 17, 17) 0%, rgba(25, 34, 48, 1) 100%);
+		@include adaptiveValue("padding-top", 50, 15);
+		@include adaptiveValue("padding-right", 40, 0);
+		@include adaptiveValue("padding-left", 40, 0);
+		@include adaptiveValue("padding-bottom", 40, 10);
 	}
 }
 .item-info {
@@ -463,6 +463,10 @@ body {
 		@include adaptiveValue("gap", 40, 10);
 		display: flex;
 		flex-wrap: wrap;
+		@media (max-width: 480px) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
 	// .footer__item
