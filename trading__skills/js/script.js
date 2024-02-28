@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 });
 
+//===============================================
 
 document.addEventListener('DOMContentLoaded', function () {
 	const items = document.querySelectorAll('.item-info');
@@ -55,3 +56,18 @@ document.addEventListener("DOMContentLoaded", function () {
 		observer.observe(item);
 	});
 });
+
+//===========================
+
+document.addEventListener("DOMContentLoaded", function () {
+	const closeButton = document.querySelector(".terms__button");
+
+	if (closeButton) {
+		closeButton.addEventListener("click", function () {
+			window.close();
+
+			window.location.href = "index.html#footer";
+		});
+	}
+});
+

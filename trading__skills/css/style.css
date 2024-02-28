@@ -79,13 +79,7 @@ body {
   font-family: "Onest";
   font-size: 30px;
   background: #12161c;
-}
-body.menu-open {
-  overflow: hidden;
-  -ms-touch-action: none;
-      touch-action: none;
-  -ms-scroll-chaining: none;
-      overscroll-behavior: none;
+  color: rgb(255, 255, 255);
 }
 
 .wrapper {
@@ -598,8 +592,8 @@ body.menu-open {
           flex: 1 1 calc(50% - 40px);
   color: rgb(255, 74, 74);
   opacity: 0;
-  -webkit-transition: opacity 3s ease;
-  transition: opacity 3s ease;
+  -webkit-transition: opacity 2s ease;
+  transition: opacity 2s ease;
   background: linear-gradient(78deg, rgb(119, 17, 17) 0%, rgb(25, 34, 48) 100%);
 }
 @media (min-width: 116.875em) {
@@ -719,7 +713,7 @@ body.menu-open {
             flex: 1 1 100%;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 480px) {
   .item-info {
     opacity: 1;
     -webkit-transition: none;
@@ -785,6 +779,7 @@ body.menu-open {
   }
 }
 .title--white {
+  padding-left: 15px;
   color: rgb(255, 255, 255);
 }
 .title--blue {
@@ -1275,7 +1270,7 @@ body.menu-open {
       -ms-transform: translateX(0);
           transform: translateX(0);
 }
-@media (max-width: 767.98px) {
+@media (max-width: 480px) {
   .info-contact__item {
     opacity: 1;
     -webkit-transition: none;

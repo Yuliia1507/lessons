@@ -7,8 +7,6 @@
 // Обнулення
 @import "_reset.scss";
 
-@import "_common.scss";
-
 // Мінімальна ширина сторінки
 $minWidth: 340;
 // Ширина полотна (макету)
@@ -25,13 +23,9 @@ body {
 	font-family: "Onest";
 	font-size: 30px;
 	background: #12161c;
-
-	&.menu-open {
-		overflow: hidden;
-		touch-action: none;
-		overscroll-behavior: none;
-	}
+	color: rgb(255, 255, 255);
 }
+
 .wrapper {
 	overflow: clip;
 	display: flex;
@@ -177,7 +171,7 @@ body {
 	flex: 1 1 calc(50% - 40px);
 	color: rgb(255, 74, 74);
 	opacity: 0;
-	transition: opacity 3s ease;
+	transition: opacity 2s ease;
 	@include adaptiveValue("min-height", 420, 300);
 	@include adaptiveValue("padding-top", 55, 15);
 	@include adaptiveValue("padding-right", 40, 20);
@@ -187,7 +181,7 @@ body {
 	@media (max-width: 900px) {
 		flex: 1 1 100%;
 	}
-	@media (max-width: 767.98px) {
+	@media (max-width: 480px) {
 		opacity: 1;
 		transition: none;
 	}
@@ -212,6 +206,8 @@ body {
 	@include adaptiveValue("font-size", 79, 30);
 	line-height: 110%;
 	&--white {
+		padding-left: 15px;
+
 		color: rgb(255, 255, 255);
 	}
 	&--blue {
@@ -356,7 +352,7 @@ body {
 			opacity: 1;
 			transform: translateX(0);
 		}
-		@media (max-width: 767.98px) {
+		@media (max-width: 480px) {
 			opacity: 1;
 			transition: none;
 		}
