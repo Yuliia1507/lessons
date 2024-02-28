@@ -447,9 +447,6 @@ body {
 @media (any-hover: hover) {
   .terms__button:hover {
     color: white;
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
   }
 }
 @media (max-width: 767.98px) {
