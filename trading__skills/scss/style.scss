@@ -50,10 +50,12 @@ body {
 	flex-direction: column;
 	@include adaptiveValue("gap", 40, 10);
 }
+
 .header {
+}
+.hero {
 	@include adaptiveValue("padding-top", 40, 10);
 	@include adaptiveValue("margin-bottom", 40, 10);
-	// .header__wrap
 
 	&__wrap {
 		display: flex;
@@ -63,8 +65,6 @@ body {
 			flex-direction: column-reverse;
 		}
 	}
-
-	// .header__content
 
 	&__content {
 		max-width: 900px;
@@ -78,17 +78,7 @@ body {
 		row-gap: 76px;
 	}
 
-	// .header__logo
-
-	&__logo {
-		max-width: 160px;
-		height: 43px;
-		flex-grow: 1;
-	}
-
-	// .header__text
-
-	&__text {
+	&__title {
 		max-width: 650px;
 		@include adaptiveValue("font-size", 79, 36);
 		line-height: 110%;
@@ -106,9 +96,11 @@ body {
 			transform: translateY(0);
 		}
 	}
-
-	// .header__image
-
+	&__logo {
+		max-width: 160px;
+		height: 43px;
+		flex-grow: 1;
+	}
 	&__image {
 		width: 100%;
 		max-width: 940px;
@@ -239,7 +231,7 @@ body {
 	// .career__image
 
 	&__image {
-		@extend .header__image;
+		@extend .hero__image;
 		img {
 			aspect-ratio: 940 / 1587;
 		}

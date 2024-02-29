@@ -1,11 +1,11 @@
 "use strict"
 
 document.addEventListener("DOMContentLoaded", function () {
-	const headerText = document.querySelector(".header__text");
-	if (headerText) {
-		headerText.classList.add("show");
+	const heroText = document.querySelector(".hero__title");
+	if (heroText) {
+		heroText.classList.add("show");
 	} else {
-		console.error("Element with class 'header__text' not found.");
+		console.error("Element with class 'hero__title' not found.");
 	}
 });
 
