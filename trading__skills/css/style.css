@@ -592,8 +592,8 @@ body {
           flex: 1 1 calc(50% - 40px);
   color: rgb(255, 74, 74);
   opacity: 0;
-  -webkit-transition: opacity 2s ease;
-  transition: opacity 2s ease;
+  -webkit-transition: opacity 3s ease;
+  transition: opacity 3s ease;
   background: linear-gradient(78deg, rgb(119, 17, 17) 0%, rgb(25, 34, 48) 100%);
 }
 @media (min-width: 116.875em) {

@@ -171,7 +171,7 @@ body {
 	flex: 1 1 calc(50% - 40px);
 	color: rgb(255, 74, 74);
 	opacity: 0;
-	transition: opacity 2s ease;
+	transition: opacity 3s ease;
 	@include adaptiveValue("min-height", 420, 300);
 	@include adaptiveValue("padding-top", 55, 15);
 	@include adaptiveValue("padding-right", 40, 20);
