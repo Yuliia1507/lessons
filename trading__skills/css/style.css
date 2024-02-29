@@ -401,6 +401,9 @@ body {
     font-size: 1.25rem;
   }
 }
+.text > *:not(:last-child) {
+  margin-bottom: 10px;
+}
 .text p a {
   -webkit-transition: color 0.3s;
   transition: color 0.3s;

@@ -122,6 +122,12 @@ body {
 	color: rgb(255, 255, 255);
 	@include adaptiveValue("font-size", 30, 20);
 	line-height: 140%;
+	> * {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
 	p {
 		a {
 			transition: color 0.3s;
