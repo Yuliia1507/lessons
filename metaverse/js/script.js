@@ -84,8 +84,43 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const swiper = new Swiper('.swiper-container', {
-	slidesPerView: '1.1',
+function playVideo(video) {
+	var overlay = video.nextElementSibling;
+	var bottomOverlay = overlay.nextElementSibling;
+
+	if (video.paused) {
+		video.play();
+		overlay.style.display = 'none';
+		bottomOverlay.style.display = 'none';
+	} else {
+		video.pause();
+		overlay.style.display = 'flex';
+		bottomOverlay.style.display = 'block';
+	}
+
+	// Add logic to show overlay and bottom overlay when video is paused
+	video.addEventListener('pause', function () {
+		overlay.style.display = 'flex';
+		bottomOverlay.style.display = 'block';
+	});
+}
+
+document.addEventListener('click', function (event) {
+	if (event.target.classList.contains('play-button')) {
+		var video = event.target.parentNode.previousElementSibling;
+		playVideo(video);
+	}
+});
+
+document.addEventListener('touchend', function (event) {
+	if (event.target.classList.contains('play-button') || event.target.tagName === 'VIDEO') {
+		var video = event.target.tagName === 'VIDEO' ? event.target : event.target.parentNode.previousElementSibling;
+		playVideo(video);
+	}
+});
+
+var swiper = new Swiper('.swiper-container', {
+	slidesPerView: 'auto',
 	loop: true,
 	spaceBetween: 54,
 	breakpoints: {
@@ -103,67 +138,3 @@ const swiper = new Swiper('.swiper-container', {
 		}
 	}
 });
-
-
-function playVideo(button) {
-	const video = button.closest('.swiper-slide').querySelector('video');
-	const overlay = button.closest('.swiper-slide').querySelector('.overlay');
-	const bottomOverlay = button.closest('.swiper-slide').querySelector('.bottom-overlay');
-
-	if (video.paused) {
-		video.play().then(function () {
-			overlay.style.display = 'none';
-			bottomOverlay.style.display = 'none';
-		}).catch(function (error) {
-			console.log("Error playing the video: " + error.message);
-		});
-	} else {
-		video.pause();
-		overlay.style.display = 'flex';
-		bottomOverlay.style.display = 'block';
-	}
-}
-
-
-
-function showOverlay(video) {
-	var overlay = video.nextElementSibling;
-	overlay.style.display = 'flex';
-	var bottomOverlay = overlay.nextElementSibling;
-	bottomOverlay.style.display = 'block';
-}
-
-function toggleOverlay(video) {
-	var overlay = video.nextElementSibling;
-	overlay.style.display = (overlay.style.display === 'none') ? 'flex' : 'none';
-	var bottomOverlay = overlay.nextElementSibling;
-	bottomOverlay.style.display = (bottomOverlay.style.display === 'none') ? 'block' : 'none';
-}
-
-document.addEventListener('click', function (event) {
-	if (event.target.classList.contains('play-button')) {
-		playVideo(event.target);
-	}
-});
-document.addEventListener('touchend', function (event) {
-	if (event.target.classList.contains('play-button')) {
-		playVideo(event.target);
-	}
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-	var videos = document.querySelectorAll('.swiper-slide video');
-	videos.forEach(function (video) {
-		video.addEventListener('play', function () {
-			toggleOverlay(this);
-		});
-		video.addEventListener('pause', function () {
-			toggleOverlay(this);
-		});
-	});
-});
-
-
-
-
-
