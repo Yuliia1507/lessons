@@ -107,15 +107,18 @@ function playVideo(video) {
 
 document.addEventListener('click', function (event) {
 	if (event.target.classList.contains('play-button')) {
-		event.preventDefault(); // Відмінити подію кліка за замовчуванням
 		var video = event.target.parentNode.previousElementSibling;
 		playVideo(video);
-
-		// Приховати стандартний контролер відтворення
-		video.controls = false;
 	}
 });
 
+document.addEventListener('click', function (event) {
+	if (event.target.classList.contains('play-button')) {
+		event.preventDefault(); // Відмінити подію кліка за замовчуванням
+		var video = event.target.parentNode.previousElementSibling;
+		playVideo(video);
+	}
+});
 
 document.addEventListener('touchstart', function (event) {
 	if (event.target.classList.contains('play-button') || event.target.tagName === 'VIDEO') {
@@ -146,3 +149,16 @@ var swiper = new Swiper('.swiper-container', {
 	}
 });
 
+// Приховати стандартний контролер відтворення коли фокус на власній кнопці відтворення
+document.addEventListener('focus', function (event) {
+	var video = document.querySelector('video');
+	if (event.target.tagName === 'BUTTON' && event.target.classList.contains('play-button')) {
+		video.controls = false;
+	}
+}, true);
+
+// Показати стандартний контролер відтворення коли фокус втрачено
+document.addEventListener('blur', function (event) {
+	var video = document.querySelector('video');
+	video.controls = true;
+}, true);
