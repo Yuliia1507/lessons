@@ -110,11 +110,16 @@ document.addEventListener('click', function (event) {
 		event.preventDefault(); // Відмінити подію кліка за замовчуванням
 		var video = event.target.parentNode.previousElementSibling;
 		playVideo(video);
+
+		// Приховати стандартний контролер відтворення
+		video.controls = false;
 	}
 });
 
+
 document.addEventListener('touchstart', function (event) {
 	if (event.target.classList.contains('play-button') || event.target.tagName === 'VIDEO') {
+		event.preventDefault(); // Відмінити подію торкання за замовчуванням
 		var video = event.target.tagName === 'VIDEO' ? event.target : event.target.parentNode.previousElementSibling;
 		playVideo(video);
 	}
@@ -122,7 +127,7 @@ document.addEventListener('touchstart', function (event) {
 
 
 var swiper = new Swiper('.swiper-container', {
-	slidesPerView: '1.2',
+	slidesPerView: '1.1',
 	loop: true,
 	spaceBetween: 54,
 	breakpoints: {
@@ -140,3 +145,4 @@ var swiper = new Swiper('.swiper-container', {
 		}
 	}
 });
+

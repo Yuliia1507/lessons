@@ -448,7 +448,9 @@ body {
 	max-width: 1182px;
 	height: 650px;
 	margin-right: 54px;
-	min-width: 290px;
+	min-width: 280px;
+	border: 2px solid purple;
+	border-radius: 25px;
 }
 .swiper-container {
 	width: 100%;
@@ -475,13 +477,13 @@ body {
 .play-button {
 	color: rgb(165, 57, 192);
 	border-radius: 50%;
-	@include adaptiveValue("font-size", 35, 16);
+	@include adaptiveValue("font-size", 35, 14);
 	cursor: pointer;
 	border: 2px solid rgb(245, 245, 245);
 	backdrop-filter: blur(10px);
 	background: rgba(255, 255, 255, 0.5);
-	width: 120px;
-	height: 120px;
+		@include adaptiveValue("width", 120, 50);
+		@include adaptiveValue("height", 120, 50);
 }
 
 .bottom-overlay {

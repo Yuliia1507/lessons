@@ -1296,7 +1296,9 @@ body.menu-open {
   max-width: 1182px;
   height: 650px;
   margin-right: 54px;
-  min-width: 290px;
+  min-width: 280px;
+  border: 2px solid purple;
+  border-radius: 25px;
 }
 
 .swiper-container {
@@ -1338,8 +1340,6 @@ body.menu-open {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.5);
-  width: 120px;
-  height: 120px;
 }
 @media (min-width: 77.5em) {
   .play-button {
@@ -1347,20 +1347,64 @@ body.menu-open {
   }
 }
 @media (min-width: 20em) and (max-width: 77.5em) {
-  @supports (font-size: clamp( 1rem , 0.5869565217rem  +  2.0652173913vw , 2.1875rem )) {
+  @supports (font-size: clamp( 0.875rem , 0.4184782609rem  +  2.2826086957vw , 2.1875rem )) {
     .play-button {
-      font-size: clamp( 1rem , 0.5869565217rem  +  2.0652173913vw , 2.1875rem );
+      font-size: clamp( 0.875rem , 0.4184782609rem  +  2.2826086957vw , 2.1875rem );
     }
   }
-  @supports not (font-size: clamp( 1rem , 0.5869565217rem  +  2.0652173913vw , 2.1875rem )) {
+  @supports not (font-size: clamp( 0.875rem , 0.4184782609rem  +  2.2826086957vw , 2.1875rem )) {
     .play-button {
-      font-size: calc(1rem + 1.1875 * (100vw - 20rem) / 57.5);
+      font-size: calc(0.875rem + 1.3125 * (100vw - 20rem) / 57.5);
     }
   }
 }
 @media (max-width: 20em) {
   .play-button {
-    font-size: 1rem;
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 77.5em) {
+  .play-button {
+    width: 7.5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 77.5em) {
+  @supports (width: clamp( 3.125rem , 1.6032608696rem  +  7.6086956522vw , 7.5rem )) {
+    .play-button {
+      width: clamp( 3.125rem , 1.6032608696rem  +  7.6086956522vw , 7.5rem );
+    }
+  }
+  @supports not (width: clamp( 3.125rem , 1.6032608696rem  +  7.6086956522vw , 7.5rem )) {
+    .play-button {
+      width: calc(3.125rem + 4.375 * (100vw - 20rem) / 57.5);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .play-button {
+    width: 3.125rem;
+  }
+}
+@media (min-width: 77.5em) {
+  .play-button {
+    height: 7.5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 77.5em) {
+  @supports (height: clamp( 3.125rem , 1.6032608696rem  +  7.6086956522vw , 7.5rem )) {
+    .play-button {
+      height: clamp( 3.125rem , 1.6032608696rem  +  7.6086956522vw , 7.5rem );
+    }
+  }
+  @supports not (height: clamp( 3.125rem , 1.6032608696rem  +  7.6086956522vw , 7.5rem )) {
+    .play-button {
+      height: calc(3.125rem + 4.375 * (100vw - 20rem) / 57.5);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .play-button {
+    height: 3.125rem;
   }
 }
 
