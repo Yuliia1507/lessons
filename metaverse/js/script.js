@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 const swiper = new Swiper('.swiper-container', {
-	slidesPerView: '1.2',
+	slidesPerView: '1.1',
 	loop: true,
 	spaceBetween: 54,
 	breakpoints: {
@@ -130,25 +130,9 @@ const swiper = new Swiper('.swiper-container', {
 
 
 function playVideo(button) {
-	const slide = button.closest('.swiper-slide');
-	if (!slide) {
-		console.error("Slide not found!");
-		return;
-	}
-
-	const video = slide.querySelector('video');
-	if (!video) {
-		console.error("Video not found!");
-		return;
-	}
-
-	const overlay = slide.querySelector('.overlay');
-	const bottomOverlay = slide.querySelector('.bottom-overlay');
-
-	if (!overlay || !bottomOverlay) {
-		console.error("Overlay or bottom overlay not found!");
-		return;
-	}
+	const video = button.closest('.swiper-slide').querySelector('video');
+	const overlay = button.closest('.swiper-slide').querySelector('.overlay');
+	const bottomOverlay = button.closest('.swiper-slide').querySelector('.bottom-overlay');
 
 	if (video.paused) {
 		video.play().then(function () {
@@ -165,35 +149,18 @@ function playVideo(button) {
 }
 
 
-function showOverlay(video) {
-	let overlay = video.nextElementSibling;
-	if (!overlay) {
-		console.error("Overlay not found!");
-		return;
-	}
-	overlay.style.display = 'flex';
 
+function showOverlay(video) {
+	var overlay = video.nextElementSibling;
+	overlay.style.display = 'flex';
 	var bottomOverlay = overlay.nextElementSibling;
-	if (!bottomOverlay) {
-		console.error("Bottom overlay not found!");
-		return;
-	}
 	bottomOverlay.style.display = 'block';
 }
 
 function toggleOverlay(video) {
-	let overlay = video.nextElementSibling;
-	if (!overlay) {
-		console.error("Overlay not found!");
-		return;
-	}
+	var overlay = video.nextElementSibling;
 	overlay.style.display = (overlay.style.display === 'none') ? 'flex' : 'none';
-
-	let bottomOverlay = overlay.nextElementSibling;
-	if (!bottomOverlay) {
-		console.error("Bottom overlay not found!");
-		return;
-	}
+	var bottomOverlay = overlay.nextElementSibling;
 	bottomOverlay.style.display = (bottomOverlay.style.display === 'none') ? 'block' : 'none';
 }
 
@@ -209,7 +176,7 @@ document.addEventListener('touchend', function (event) {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-	const videos = document.querySelectorAll('.swiper-slide video');
+	var videos = document.querySelectorAll('.swiper-slide video');
 	videos.forEach(function (video) {
 		video.addEventListener('play', function () {
 			toggleOverlay(this);
@@ -219,7 +186,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	});
 });
-
 
 
 
