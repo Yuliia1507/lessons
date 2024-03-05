@@ -109,10 +109,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 const swiper = new Swiper('.swiper-container', {
-	// Налаштування відображення
-	slidesPerView: 'auto',
-	loop: true, // дозволяє відео листатися знову
-	slidesPerView: 1.1,
+	slidesPerView: '1.2',
+	loop: true,
 	spaceBetween: 54,
 	breakpoints: {
 		320: {
@@ -130,37 +128,97 @@ const swiper = new Swiper('.swiper-container', {
 	}
 });
 
-function playVideo(videoId) {
-	var video = document.getElementById(videoId);
-	var overlay = document.getElementById('overlay' + videoId.charAt(videoId.length - 1));
-	var bottomOverlay = document.getElementById('bottomOverlay' + videoId.charAt(videoId.length - 1));
-	video.play();
-	overlay.style.display = 'none';
-	bottomOverlay.style.display = 'none';
 
-	// Приховати bottom-overlay при торканні на тач-скріні
-	video.addEventListener('touchstart', function (event) {
-		if (!video.paused && !video.ended) {
-			toggleOverlay(videoId);
-		}
-	});
-}
+function playVideo(button) {
+	const slide = button.closest('.swiper-slide');
+	if (!slide) {
+		console.error("Slide not found!");
+		return;
+	}
 
-function showOverlay(videoId) {
-	var overlay = document.getElementById('overlay' + videoId.charAt(videoId.length - 1));
-	overlay.style.display = 'flex';
-	var bottomOverlay = document.getElementById('bottomOverlay' + videoId.charAt(videoId.length - 1));
-	bottomOverlay.style.display = 'block';
-}
+	const video = slide.querySelector('video');
+	if (!video) {
+		console.error("Video not found!");
+		return;
+	}
 
-function toggleOverlay(videoId) {
-	var bottomOverlay = document.getElementById('bottomOverlay' + videoId.charAt(videoId.length - 1));
-	if (bottomOverlay.style.display === 'block') {
-		bottomOverlay.style.display = 'none';
+	const overlay = slide.querySelector('.overlay');
+	const bottomOverlay = slide.querySelector('.bottom-overlay');
+
+	if (!overlay || !bottomOverlay) {
+		console.error("Overlay or bottom overlay not found!");
+		return;
+	}
+
+	if (video.paused) {
+		video.play().then(function () {
+			overlay.style.display = 'none';
+			bottomOverlay.style.display = 'none';
+		}).catch(function (error) {
+			console.log("Error playing the video: " + error.message);
+		});
 	} else {
+		video.pause();
+		overlay.style.display = 'flex';
 		bottomOverlay.style.display = 'block';
 	}
 }
+
+
+function showOverlay(video) {
+	let overlay = video.nextElementSibling;
+	if (!overlay) {
+		console.error("Overlay not found!");
+		return;
+	}
+	overlay.style.display = 'flex';
+
+	var bottomOverlay = overlay.nextElementSibling;
+	if (!bottomOverlay) {
+		console.error("Bottom overlay not found!");
+		return;
+	}
+	bottomOverlay.style.display = 'block';
+}
+
+function toggleOverlay(video) {
+	let overlay = video.nextElementSibling;
+	if (!overlay) {
+		console.error("Overlay not found!");
+		return;
+	}
+	overlay.style.display = (overlay.style.display === 'none') ? 'flex' : 'none';
+
+	let bottomOverlay = overlay.nextElementSibling;
+	if (!bottomOverlay) {
+		console.error("Bottom overlay not found!");
+		return;
+	}
+	bottomOverlay.style.display = (bottomOverlay.style.display === 'none') ? 'block' : 'none';
+}
+
+document.addEventListener('click', function (event) {
+	if (event.target.classList.contains('play-button')) {
+		playVideo(event.target);
+	}
+});
+document.addEventListener('touchend', function (event) {
+	if (event.target.classList.contains('play-button')) {
+		playVideo(event.target);
+	}
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+	const videos = document.querySelectorAll('.swiper-slide video');
+	videos.forEach(function (video) {
+		video.addEventListener('play', function () {
+			toggleOverlay(this);
+		});
+		video.addEventListener('pause', function () {
+			toggleOverlay(this);
+		});
+	});
+});
 
 
 

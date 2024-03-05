@@ -491,7 +491,10 @@ body {
 	width: 100%;
 	@include adaptiveValue("height", 148, 50);
 	height: 148px;
-	padding: 44px 15px 48px 50px;
+	padding-right: 15px;
+	@include adaptiveValue("padding-top", 44, 15);
+	@include adaptiveValue("padding-bottom", 48, 15);
+	@include adaptiveValue("padding-left", 50, 15);
 	border-radius: 0px 0px 25px 25px;
 	backdrop-filter: blur(10px);
 	background: rgba(255, 255, 255, 0.1);
@@ -528,9 +531,10 @@ body {
 	}
 
 	&__title {
-		@include adaptiveValue("font-size", 45, 20);
+		@include adaptiveValue("font-size", 45, 16);
 		font-weight: 600;
 		line-height: 56px;
+		@include adaptiveValue("line-height", 56, 20);
 	}
 }
 .swiper-container {
