@@ -107,20 +107,22 @@ function playVideo(video) {
 
 document.addEventListener('click', function (event) {
 	if (event.target.classList.contains('play-button')) {
+		event.preventDefault(); // Відмінити подію кліка за замовчуванням
 		var video = event.target.parentNode.previousElementSibling;
 		playVideo(video);
 	}
 });
 
-document.addEventListener('touchend', function (event) {
+document.addEventListener('touchstart', function (event) {
 	if (event.target.classList.contains('play-button') || event.target.tagName === 'VIDEO') {
 		var video = event.target.tagName === 'VIDEO' ? event.target : event.target.parentNode.previousElementSibling;
 		playVideo(video);
 	}
 });
 
+
 var swiper = new Swiper('.swiper-container', {
-	slidesPerView: 'auto',
+	slidesPerView: '1.2',
 	loop: true,
 	spaceBetween: 54,
 	breakpoints: {
