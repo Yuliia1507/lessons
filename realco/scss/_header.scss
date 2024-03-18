@@ -208,22 +208,18 @@
 
 	&__list {
 		background-color: $orangeColor;
-		width: toRem(200);
+		width: toRem(150);
 		@media (max-width: toEm(960)) {
 			width: 100%;
-			background-color: rgb(218, 126, 93);
+			background-color: transparent;
 		}
 	}
 
 	// .sub-menu__item
 
 	&__item {
-		background-color: $orangeColor;
 		&:not(:last-child) {
 			margin-bottom: toRem(5);
-			@media (max-width: toEm(960)) {
-				margin-bottom: toRem(20);
-			}
 		}
 		@media (any-hover: hover) {
 			&:hover {

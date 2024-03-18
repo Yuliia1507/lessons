@@ -415,24 +415,16 @@ textarea {
 }
 .sub-menu__list {
   background-color: rgb(207, 111, 73);
-  width: 12.5rem;
+  width: 9.375rem;
 }
 @media (max-width: 60em) {
   .sub-menu__list {
     width: 100%;
-    background-color: rgb(218, 126, 93);
+    background-color: transparent;
   }
-}
-.sub-menu__item {
-  background-color: rgb(207, 111, 73);
 }
 .sub-menu__item:not(:last-child) {
   margin-bottom: 0.3125rem;
-}
-@media (max-width: 60em) {
-  .sub-menu__item:not(:last-child) {
-    margin-bottom: 1.25rem;
-  }
 }
 @media (any-hover: hover) {
   .sub-menu__item:hover {
