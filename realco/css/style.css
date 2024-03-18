@@ -947,9 +947,30 @@ body.menu-open {
 }
 .search__input input {
   color: rgb(101, 102, 92);
-  font-size: 1.25rem;
   padding-right: 0.3125rem;
   padding-left: 0.3125rem;
+}
+@media (min-width: 81.875em) {
+  .search__input input {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 81.875em) {
+  @supports (font-size: clamp( 1rem , 0.9191919192rem  +  0.404040404vw , 1.25rem )) {
+    .search__input input {
+      font-size: clamp( 1rem , 0.9191919192rem  +  0.404040404vw , 1.25rem );
+    }
+  }
+  @supports not (font-size: clamp( 1rem , 0.9191919192rem  +  0.404040404vw , 1.25rem )) {
+    .search__input input {
+      font-size: calc(1rem + 0.25 * (100vw - 20rem) / 61.875);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .search__input input {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 81.875em) {
   .search__input input {
@@ -996,23 +1017,18 @@ body.menu-open {
   }
 }
 .search__input input::-webkit-input-placeholder {
-  font-size: 1.25rem;
   line-height: 1.875rem;
 }
 .search__input input::-moz-placeholder {
-  font-size: 1.25rem;
   line-height: 1.875rem;
 }
 .search__input input:-ms-input-placeholder {
-  font-size: 1.25rem;
   line-height: 1.875rem;
 }
 .search__input input::-ms-input-placeholder {
-  font-size: 1.25rem;
   line-height: 1.875rem;
 }
 .search__input input::placeholder {
-  font-size: 1.25rem;
   line-height: 1.875rem;
 }
 .search__input input:focus {

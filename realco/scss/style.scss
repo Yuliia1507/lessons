@@ -200,13 +200,12 @@ body {
 		}
 		input {
 			color: $greyColor;
-			font-size: toRem(20);
+			@include adaptiveValue("font-size", 20, 16);
 			padding-right: toRem(5);
 			padding-left: toRem(5);
 			@include adaptiveValue("padding-top", 15, 10);
 			@include adaptiveValue("padding-bottom", 15, 10);
 			&::placeholder {
-				font-size: toRem(20);
 				line-height: toRem(30);
 			}
 			&:focus {
