@@ -178,6 +178,7 @@ body {
 
 .search {
 	display: flex;
+	flex-wrap: wrap;
 	gap: toRem(19);
 	&__input {
 		flex-grow: 1;
@@ -202,8 +203,8 @@ body {
 			font-size: toRem(20);
 			padding-right: toRem(5);
 			padding-left: toRem(5);
-			padding-top: toRem(15);
-			padding-bottom: toRem(15);
+			@include adaptiveValue("padding-top", 15, 10);
+			@include adaptiveValue("padding-bottom", 15, 10);
 			&::placeholder {
 				font-size: toRem(20);
 				line-height: toRem(30);
