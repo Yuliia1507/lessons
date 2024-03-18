@@ -544,6 +544,9 @@ body {
 
 	&__container {
 		text-align: center;
+		@media (max-width: toEm(480)) {
+			text-align: left;
+		}
 	}
 
 	// .properties__label
@@ -559,6 +562,9 @@ body {
 	&__title {
 		&:not(:last-child) {
 			@include adaptiveValue("margin-bottom", 82, 20);
+		}
+		@media (max-width: toEm(480)) {
+			text-align: center;
 		}
 	}
 

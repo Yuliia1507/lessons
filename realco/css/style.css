@@ -1842,6 +1842,11 @@ body.menu-open {
 .properties__container {
   text-align: center;
 }
+@media (max-width: 30em) {
+  .properties__container {
+    text-align: left;
+  }
+}
 .properties__label:not(:last-child) {
   margin-bottom: 1.5625rem;
 }
@@ -1865,6 +1870,11 @@ body.menu-open {
 @media (max-width: 20em) {
   .properties__title:not(:last-child) {
     margin-bottom: 1.25rem;
+  }
+}
+@media (max-width: 30em) {
+  .properties__title {
+    text-align: center;
   }
 }
 .properties__area {
