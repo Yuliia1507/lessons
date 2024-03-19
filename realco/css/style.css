@@ -1092,7 +1092,7 @@ body.menu-open {
           align-items: center;
 }
 .logoipsum__container img {
-  width: 7.5rem;
+  max-width: 7.5rem;
   height: 1.75rem;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1116,6 +1116,7 @@ body.menu-open {
   }
 }
 .logoipsum__text {
+  color: rgb(42, 44, 31);
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;

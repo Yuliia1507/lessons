@@ -235,7 +235,7 @@ body {
 		gap: toRem(15);
 		align-items: center;
 		img {
-			width: toRem(120);
+			max-width: toRem(120);
 			height: toRem(28);
 			object-fit: cover;
 			aspect-ratio: 120 / 28;
@@ -253,6 +253,7 @@ body {
 	// .logoipsum__text
 
 	&__text {
+		color: rgb(42, 44, 31);
 		flex-grow: 1;
 		font-size: toRem(18);
 		line-height: toRem(27);

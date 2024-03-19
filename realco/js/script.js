@@ -107,22 +107,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-	moveElements(); // Викликаємо функцію при завантаженні сторінки
-});
-
-window.onresize = function () {
-	moveElements(); // Викликаємо функцію при кожній зміні розміру вікна
-};
-
-
-
-
-
-
-
-
-
 
 
 document.addEventListener("DOMContentLoaded", function () {
