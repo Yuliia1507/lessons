@@ -1,7 +1,7 @@
 @use "sass:math";
 
 // Кольори
-$mainColor: rgb(42, 44, 31);
+$mainColor: #2a2c1f;
 $orangeColor: rgb(207, 111, 73);
 $greyColor: rgb(101, 102, 92);
 // Функції
@@ -94,9 +94,6 @@ body {
 	&__title {
 		@include adaptiveValue("font-size", 56, 35);
 		@include adaptiveValue("line-height", 67, 35);
-		@media (max-width: toRem(767.98)) {
-			text-align: center;
-		}
 	}
 
 	// .hero__text
@@ -133,21 +130,21 @@ body {
 		&::before {
 			content: "";
 		}
-		@media (max-width: toRem(767.98)) {
+		@media (max-width: toEm(767.98)) {
 			top: 0;
 			left: 0;
 			z-index: -2;
 			width: 100%;
 		}
-		@media (max-width: toRem(767.98)) {
+		@media (max-width: toEm(767.98)) {
 			content: "";
 			position: absolute;
 			width: 100%;
 			height: 100%;
 			top: 0;
 			left: 0;
-			background-color: #fff;
-			opacity: 0.4;
+			background-color: #ffffff;
+			opacity: 0.3;
 			z-index: -1;
 		}
 	}
@@ -155,8 +152,8 @@ body {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 135px;
-		height: 137px;
+		@include adaptiveValue("width", 130, 20, $containerWidth, 1200);
+		@include adaptiveValue("height", 130, 20, $containerWidth, 1200);
 		z-index: 1;
 		@media (max-width: toRem(767.98)) {
 			display: none;
@@ -167,8 +164,8 @@ body {
 		bottom: 0;
 		left: 50%;
 		transform: translate(-100%, 0);
-		width: toRem(135);
-		height: toRem(135);
+		@include adaptiveValue("width", 130, 20, $containerWidth, 1200);
+		@include adaptiveValue("height", 130, 20, $containerWidth, 1200);
 		z-index: 1;
 		@media (max-width: toRem(767.98)) {
 			display: none;
@@ -180,6 +177,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	gap: toRem(19);
+	z-index: 2;
 	&__input {
 		flex-grow: 1;
 		display: flex;
@@ -234,10 +232,11 @@ body {
 		display: flex;
 		gap: toRem(15);
 		align-items: center;
+		justify-content: space-between;
 		img {
 			max-width: toRem(120);
 			height: toRem(28);
-			object-fit: cover;
+			object-fit: contain;
 			aspect-ratio: 120 / 28;
 		}
 		@media (max-width: toEm(1162)) {
@@ -246,15 +245,13 @@ body {
 		}
 		@media (max-width: toEm(960)) {
 			flex-wrap: wrap;
-			justify-content: center;
 		}
 	}
 
 	// .logoipsum__text
 
 	&__text {
-		color: rgb(42, 44, 31);
-		flex-grow: 1;
+		max-width: toRem(230);
 		font-size: toRem(18);
 		line-height: toRem(27);
 	}

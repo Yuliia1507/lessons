@@ -92,21 +92,20 @@
 			overflow: auto;
 			top: 0;
 			left: -100%;
-			z-index: 5;
 			transition: left 0.3s;
 			padding: toRem(80) toRem(15) toRem(30) toRem(15);
-			background-color: #cb9985;
+			background-color: #d3d3ce;
 			z-index: 1;
 			&::before {
 				content: "";
 				position: fixed;
 				width: 100%;
-				height: toRem(60);
+				height: toRem(55);
 				top: 0;
 				left: -100%;
 				z-index: 2;
 				transition: left 0.3s;
-				background-color: rgb(214, 132, 102);
+				background-color: #939878;
 			}
 			.menu-open & {
 				left: 0;
@@ -344,6 +343,7 @@
 	}
 
 	&__cart {
+		background: rgb(255, 255, 255);
 		max-width: toRem(100);
 		flex-shrink: 0;
 		padding: toRem(9) toRem(21);
