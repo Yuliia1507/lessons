@@ -1893,7 +1893,6 @@ body.menu-open {
   color: rgba(21, 21, 21, 0.6);
   font-size: 1rem;
   line-height: 1.5rem;
-  letter-spacing: 2%;
 }
 
 @media (min-width: 71.25em) {
