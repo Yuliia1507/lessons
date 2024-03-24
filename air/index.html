@@ -56,81 +56,83 @@
 			</section>
 			<div class="booking booking--margin">
 				<div class="booking__container">
-					<div class="booking__content">
-						<form action="#" class="booking__header header-booking">
-							<div class="header-booking__select">
-								<select name="trip" id="trip">
-									<option disabled selected value="">Round Trip</option>
-									<option value="trip1">Trip1</option>
-									<option value="trip2">Trip2</option>
-									<option value="trip3">Trip3</option>
-									<option value="trip4">Trip4</option>
-								</select>
-							</div>
-							<div class="header-booking__select">
-								<select name="flight" id="flight">
-									<option disabled selected value="">Flight Type</option>
-									<option value="flight1">Flight1</option>
-									<option value="flight2">Flight2</option>
-								</select>
-							</div>
-							<div class="header-booking__select ">
-								<select name="person" id="person">
-									<option disabled selected value="">Person</option>
-									<option value="person1">Person1</option>
-									<option value="person2">Person2</option>
-								</select>
-							</div>
-						</form>
-						<div class="booking__wrapper">
-							<div class="booking__item-wrap">
-								<div class="booking__item">
-									<label for="from">From:</label>
-									<select id="from" name="from" required onchange="updateAirport('from')">
-										<option value="" selected>LAX</option>
+					<form action="#">
+						<div class="booking__content">
+							<div class="booking__header header-booking">
+								<div class="header-booking__select">
+									<select name="trip" id="trip">
+										<option disabled selected value="">Round Trip</option>
+										<option value="trip1">Trip1</option>
+										<option value="trip2">Trip2</option>
+										<option value="trip3">Trip3</option>
+										<option value="trip4">Trip4</option>
 									</select>
-									<span id="fromAirport">Los Angeles Intl Arpt, Los Angeles</span>
 								</div>
-								<button class="booking__btn-item" onclick="swapOptions()"><img src="img/booking-arrows.png"
-										alt="arrows"></button>
-								<div class="booking__item">
-									<label for="to">To:</label>
-									<select id="to" name="to" required onchange="updateAirport('to')">
-										<option value="" selected>MIA</option>
+								<div class="header-booking__select">
+									<select name="flight" id="flight">
+										<option disabled selected value="">Flight Type</option>
+										<option value="flight1">Flight1</option>
+										<option value="flight2">Flight2</option>
 									</select>
-									<span id="toAirport">Miami Intl, Miami</span>
+								</div>
+								<div class="header-booking__select ">
+									<select name="person" id="person">
+										<option disabled selected value="">Person</option>
+										<option value="person1">Person1</option>
+										<option value="person2">Person2</option>
+									</select>
 								</div>
 							</div>
-							<div class="booking__item item-date">
-								<div class="item-date__departure departure _icon-calendar">
-									<div class="departure__wrap">
-										<label for="departureDate">Departure</label>
-										<select id="departureDate" name="departureDate" required>
-											<option value="">Fri 15 Oct</option>
+							<div class="booking__wrapper">
+								<div class="booking__item-wrap">
+									<div class="booking__item">
+										<label for="from">From:</label>
+										<select id="from" name="from" required onchange="updateAirport('from')">
+											<option value="LAX">LAX</option>
 										</select>
-										<div class="item-date__buttons">
-											<button id="prevDepartureButton">Prev</button>
-											<button id="nextDepartureButton">Next</button>
+										<span id="fromAirport">Los Angeles Intl Arpt, Los Angeles</span>
+									</div>
+									<button type="button" class="booking__btn-item" onclick="swapOptions()"><img
+											src="img/booking-arrows.png" alt="arrows"></button>
+									<div class="booking__item">
+										<label for="to">To:</label>
+										<select id="to" name="to" required onchange="updateAirport('to')">
+											<option value="MIA">MIA</option>
+										</select>
+										<span id="toAirport">Miami Intl, Miami</span>
+									</div>
+								</div>
+								<div class="booking__item item-date">
+									<div class="item-date__departure departure _icon-calendar">
+										<div class="departure__wrap">
+											<label for="departureDate">Departure</label>
+											<select id="departureDate" name="departureDate" required>
+												<option value="">Fri 15 Oct</option>
+											</select>
+											<div class="item-date__buttons">
+												<button type="button" id="prevDepartureButton">Prev</button>
+												<button type="button" id="nextDepartureButton">Next</button>
+											</div>
+										</div>
+									</div>
+									<div class="item-date__return return _icon-calendar">
+										<div class="return__wrap">
+											<label for="returnDate">Return</label>
+											<select id="returnDate" name="returnDate" required>
+												<option value="">Tue 19 Oct</option>
+											</select>
+											<div class="item-date__buttons">
+												<button type="button" id="prevReturnButton">Prev</button>
+												<button type="button" id="nextReturnButton">Next</button>
+											</div>
 										</div>
 									</div>
 								</div>
-								<div class="item-date__return return _icon-calendar">
-									<div class="return__wrap">
-										<label for="returnDate">Return</label>
-										<select id="returnDate" name="returnDate" required>
-											<option value="">Tue 19 Oct</option>
-										</select>
-										<div class="item-date__buttons">
-											<button id="prevReturnButton">Prev</button>
-											<button id="nextReturnButton">Next</button>
-										</div>
-									</div>
-								</div>
 							</div>
+							<a href="#" class="booking__link">Add Requirements</a>
 						</div>
-						<a href="#" class="booking__link">Add Requirements</a>
-					</div>
-					<button class="booking__button _icon-arrow-right2">Book Flights</button>
+						<button type="submit" class="booking__button _icon-arrow-right2">Book Flights</button>
+					</form>
 				</div>
 			</div>
 			<section class="private-jet private-jet--margin">
@@ -304,39 +306,37 @@
 			<div class="plane">
 				<img src="img/plane-large.png" alt="plane">
 			</div>
-	</div>
-	</main>
-	<footer class="footer">
-		<div class="footer__container">
-			<div class="footer__logo">
-				<img src="img/logo-white.png" alt="logo">
-			</div>
-			<div class="footer__wrapper">
-				<ul class="footer__list">
-					<li class="footer__item">
-						<a class="footer__link" href="#">SERVICES</a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#">ABOUT US</a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#">NEWS</a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#">CONTACT</a>
-					</li>
-				</ul>
-				<div class="footer__copyright">
-					© 2021 Air. All rights reserved.
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo">
+					<img src="img/logo-white.png" alt="logo">
+				</div>
+				<div class="footer__wrapper">
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a class="footer__link" href="#">SERVICES</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">ABOUT US</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">NEWS</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">CONTACT</a>
+						</li>
+					</ul>
+					<div class="footer__copyright">
+						© 2021 Air. All rights reserved.
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-	<button id="scrollToTopBtn"><img src="img/plane-icon.svg" alt="plane"></button>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-	<script src="js/script.js"></script>
-
+		</footer>
+		<button id="scrollToTopBtn"><img src="img/plane-icon.svg" alt="plane"></button>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/script.js"></script>
+	</div>
 </body>
 
 </html>
