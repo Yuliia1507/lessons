@@ -918,6 +918,7 @@ body.menu-open {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  background: transparent;
 }
 .booking__item label {
   color: rgba(21, 21, 21, 0.6);
@@ -1278,6 +1279,7 @@ body.menu-open {
   font-size: 0.875rem;
   font-weight: 600;
   text-transform: capitalize;
+  background: transparent;
 }
 
 .item-date {
@@ -1349,6 +1351,12 @@ body.menu-open {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+}
+.item-date__departure select, .item-date__return select {
+  background: transparent;
+}
+.item-date__return select {
+  background: transparent;
 }
 .item-date__buttons {
   color: rgba(21, 21, 21, 0.6);

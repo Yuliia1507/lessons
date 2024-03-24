@@ -218,6 +218,7 @@ body {
 			line-height: toRem(36);
 			text-transform: capitalize;
 			appearance: none;
+			background: transparent;
 		}
 		label {
 			color: rgba(21, 21, 21, 0.6);
@@ -336,6 +337,7 @@ body {
 			font-size: toRem(14);
 			font-weight: 600;
 			text-transform: capitalize;
+			background: transparent;
 		}
 	}
 }
@@ -356,9 +358,16 @@ body {
 		@media (max-width: toEm(480)) {
 			justify-content: flex-end;
 		}
+		select {
+			background: transparent;
+		}
 	}
 	&__return {
 		@extend .item-date__departure;
+			select{
+			    background: transparent;
+
+		}
 	}
 	&__buttons {
 		color: rgba(21, 21, 21, 0.6);
