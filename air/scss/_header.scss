@@ -27,7 +27,7 @@
 	// .header__logo
 
 	&__logo {
-		z-index: 2;
+		z-index: 17;
 		flex-grow: 1;
 		height: toRem(36);
 		@media (max-width: toEm(480)) {
@@ -70,7 +70,7 @@
 			transition: left 0.3s;
 			padding: toRem(80) toRem(15) toRem(30) toRem(15);
 			background-color: #d3d3ce;
-			z-index: 1;
+			z-index: 15;
 			&::before {
 				content: "";
 				position: fixed;
@@ -78,7 +78,7 @@
 				height: toRem(55);
 				top: 0;
 				left: -100%;
-				z-index: 2;
+				z-index: 16;
 				transition: left 0.3s;
 				background-color: rgb(229, 244, 246);
 			}
@@ -157,7 +157,7 @@
 		flex: 0 0 toRem(25);
 		height: toRem(18);
 		position: relative;
-		z-index: 5;
+		z-index: 17;
 
 		&::before,
 		&::after,
