@@ -60,7 +60,7 @@
 						<form action="#" class="booking__header header-booking">
 							<div class="header-booking__select">
 								<select name="trip" id="trip">
-									<option disabled selected value="" value="trip">Round Trip</option>
+									<option disabled selected value="">Round Trip</option>
 									<option value="trip1">Trip1</option>
 									<option value="trip2">Trip2</option>
 									<option value="trip3">Trip3</option>
@@ -69,14 +69,14 @@
 							</div>
 							<div class="header-booking__select">
 								<select name="flight" id="flight">
-									<option disabled selected value="" value="flight">Flight Type</option>
+									<option disabled selected value="">Flight Type</option>
 									<option value="flight1">Flight1</option>
 									<option value="flight2">Flight2</option>
 								</select>
 							</div>
 							<div class="header-booking__select ">
 								<select name="person" id="person">
-									<option disabled selected value="" value="person">Person</option>
+									<option disabled selected value="">Person</option>
 									<option value="person1">Person1</option>
 									<option value="person2">Person2</option>
 								</select>
@@ -87,7 +87,7 @@
 								<div class="booking__item">
 									<label for="from">From:</label>
 									<select id="from" name="from" required onchange="updateAirport('from')">
-										<option value="LAX" selected>LAX</option>
+										<option value="" selected>LAX</option>
 									</select>
 									<span id="fromAirport">Los Angeles Intl Arpt, Los Angeles</span>
 								</div>
@@ -96,7 +96,7 @@
 								<div class="booking__item">
 									<label for="to">To:</label>
 									<select id="to" name="to" required onchange="updateAirport('to')">
-										<option value="MIA" selected>MIA</option>
+										<option value="" selected>MIA</option>
 									</select>
 									<span id="toAirport">Miami Intl, Miami</span>
 								</div>
