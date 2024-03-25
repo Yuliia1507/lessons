@@ -309,11 +309,8 @@ body {
 				background-color: rgb(143, 128, 154);
 			}
 		}
-		@media (max-width: 767.98px) {
-			margin-top: toRem(-10);
-		}
-		@media (max-width: toEm(480)) {
-			margin-top: toRem(-5);
+		@media (max-width: toEm(767.98)) {
+			margin-top: toRem(-15);
 		}
 	}
 }
@@ -364,9 +361,8 @@ body {
 	}
 	&__return {
 		@extend .item-date__departure;
-			select{
-			    background: transparent;
-
+		select {
+			background: transparent;
 		}
 	}
 	&__buttons {
@@ -946,7 +942,7 @@ body {
 #scrollToTopBtn {
 	display: none;
 	position: fixed;
-	bottom: toRem(20);
+	bottom: toRem(10);
 	right: toRem(15);
 	z-index: 10;
 	width: toRem(50);

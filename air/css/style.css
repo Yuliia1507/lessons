@@ -1227,14 +1227,9 @@ body.menu-open {
     background-color: rgb(143, 128, 154);
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 47.99875em) {
   .booking__button {
-    margin-top: -0.625rem;
-  }
-}
-@media (max-width: 30em) {
-  .booking__button {
-    margin-top: -0.3125rem;
+    margin-top: -0.9375rem;
   }
 }
 
@@ -2572,7 +2567,7 @@ body.menu-open {
 #scrollToTopBtn {
   display: none;
   position: fixed;
-  bottom: 1.25rem;
+  bottom: 0.625rem;
   right: 0.9375rem;
   z-index: 10;
   width: 3.125rem;
