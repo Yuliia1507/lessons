@@ -435,11 +435,22 @@ body {
 }
 
 .title {
+	position: relative;
 	@include adaptiveValue("font-size", 36, 29);
 	font-weight: 700;
 	@include adaptiveValue("line-height", 54, 35);
 	text-align: center;
 	text-transform: capitalize;
+	&::before {
+		content: "";
+		position: absolute;
+		width: toRem(40);
+		height: toRem(40);
+		background: rgba(21, 21, 21, 0.1);
+		border-radius: 50%;
+		top: toRem(6);
+		left: 48%;
+	}
 }
 .item-private {
 	position: relative;
@@ -643,12 +654,23 @@ body {
 	// .charters__wrapper
 
 	&__wrapper {
+		position: relative;
 		display: flex;
 		flex-wrap: wrap;
 		column-gap: toRem(30);
 		row-gap: toRem(15);
 		&:not(:last-child) {
 			margin-bottom: toRem(20);
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			background: url("../img/map.png");
+			width: toRem(854);
+			height: toRem(339);
+			z-index: -1;
+			top: toRem(-30);
+			right: toRem(-150);
 		}
 	}
 

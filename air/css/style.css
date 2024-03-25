@@ -1458,6 +1458,7 @@ body.menu-open {
 }
 
 .title {
+  position: relative;
   font-weight: 700;
   text-align: center;
   text-transform: capitalize;
@@ -1505,6 +1506,16 @@ body.menu-open {
   .title {
     line-height: 2.1875rem;
   }
+}
+.title::before {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: rgba(21, 21, 21, 0.1);
+  border-radius: 50%;
+  top: 0.375rem;
+  left: 48%;
 }
 
 .item-private {
@@ -1946,6 +1957,7 @@ body.menu-open {
   }
 }
 .charters__wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1958,6 +1970,16 @@ body.menu-open {
 }
 .charters__wrapper:not(:last-child) {
   margin-bottom: 1.25rem;
+}
+.charters__wrapper::before {
+  content: "";
+  position: absolute;
+  background: url("../img/map.png");
+  width: 53.375rem;
+  height: 21.1875rem;
+  z-index: -1;
+  top: -1.875rem;
+  right: -9.375rem;
 }
 .item-charters {
   border-radius: 0.75rem;
