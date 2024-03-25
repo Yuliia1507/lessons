@@ -1981,6 +1981,11 @@ body.menu-open {
   top: -1.875rem;
   right: -9.375rem;
 }
+@media (max-width: 47.99875em) {
+  .charters__wrapper::before {
+    display: none;
+  }
+}
 .item-charters {
   border-radius: 0.75rem;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(19, 10, 46, 0.13), 0px 3px 14px 0px rgba(19, 10, 46, 0.03), 0px 8px 32px 0px rgba(19, 10, 46, 0.07), 0px 30px 84px 0px rgba(19, 10, 46, 0.08);

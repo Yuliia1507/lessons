@@ -671,6 +671,9 @@ body {
 			z-index: -2;
 			top: toRem(-30);
 			right: toRem(-150);
+			@media (max-width: toEm(767.98)) {
+				display: none;
+			}
 		}
 	}
 
