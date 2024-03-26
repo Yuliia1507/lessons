@@ -763,11 +763,11 @@ body {
 
 	&__wrapper {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: flex-end;
 		column-gap: toRem(24);
 		row-gap: toRem(15);
 		@media (max-width: toEm(975)) {
-			flex-wrap: wrap;
 			align-items: flex-start;
 		}
 	}
@@ -779,7 +779,7 @@ body {
 }
 
 .item-membership {
-	flex: 1 1 calc(33.333% - toRem(48));
+	flex: 0 1 calc(33.333% - toRem(48));
 	@include adaptiveValue("padding", 24, 10);
 	border-radius: toRem(20) 0 0 toRem(20);
 	background: rgb(245, 245, 245);
@@ -793,7 +793,7 @@ body {
 	// .item-membership__title
 	&--background {
 		align-self: flex-start;
-		margin-top: toRem(-40);
+		margin-bottom: toRem(40);
 		color: #ffffff;
 		border-radius: toRem(20);
 		background: rgb(101, 98, 147);
