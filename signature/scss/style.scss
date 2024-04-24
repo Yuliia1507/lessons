@@ -196,7 +196,8 @@ body {
 	&__wrap {
 		display: flex;
 		flex-wrap: wrap;
-		@include adaptiveValue("gap", 60, 20);
+		@include adaptiveValue("gap", 60, 15);
+		margin-bottom: toRem(15);
 	}
 
 	// .signature-two__item

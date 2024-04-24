@@ -322,6 +322,7 @@ body.menu-open {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 0.9375rem;
 }
 @media (min-width: 71.25em) {
   .signature-two__wrap {
@@ -329,20 +330,20 @@ body.menu-open {
   }
 }
 @media (min-width: 20em) and (max-width: 71.25em) {
-  @supports (gap: clamp( 1.25rem , 0.2743902439rem  +  4.8780487805vw , 3.75rem )) {
+  @supports (gap: clamp( 0.9375rem , -0.1600609756rem  +  5.487804878vw , 3.75rem )) {
     .signature-two__wrap {
-      gap: clamp( 1.25rem , 0.2743902439rem  +  4.8780487805vw , 3.75rem );
+      gap: clamp( 0.9375rem , -0.1600609756rem  +  5.487804878vw , 3.75rem );
     }
   }
-  @supports not (gap: clamp( 1.25rem , 0.2743902439rem  +  4.8780487805vw , 3.75rem )) {
+  @supports not (gap: clamp( 0.9375rem , -0.1600609756rem  +  5.487804878vw , 3.75rem )) {
     .signature-two__wrap {
-      gap: calc(1.25rem + 2.5 * (100vw - 20rem) / 51.25);
+      gap: calc(0.9375rem + 2.8125 * (100vw - 20rem) / 51.25);
     }
   }
 }
 @media (max-width: 20em) {
   .signature-two__wrap {
-    gap: 1.25rem;
+    gap: 0.9375rem;
   }
 }
 .label {
