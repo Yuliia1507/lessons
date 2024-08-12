@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('fonts/icons.eot?7wapqy');
+  src:  url('fonts/icons.eot?7wapqy#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?7wapqy') format('truetype'),
+    url('fonts/icons.woff?7wapqy') format('woff'),
+    url('fonts/icons.svg?7wapqy#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"], [class*=" _icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-facebook1:before {
+  content: "\e900";
+}
+._icon-instagram:before {
+  content: "\e90b";
+}
+._icon-cog:before {
+  content: "\e994";
+}
+._icon-eye:before {
+  content: "\e9ce";
+}
+._icon-mail4:before {
+  content: "\ea86";
+}
+._icon-telegram:before {
+  content: "\ea95";
+}
+._icon-github:before {
+  content: "\eab0";
+}
+._icon-skype:before {
+  content: "\eac5";
+}
