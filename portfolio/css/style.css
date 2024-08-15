@@ -1262,24 +1262,24 @@ body.menu-open {
 }
 @media (min-width: 101.875em) {
   .circle--footer {
-    right: -6.25rem;
+    left: -6.25rem;
   }
 }
 @media (min-width: 20em) and (max-width: 101.875em) {
-  @supports (right: clamp( -6.25rem , -2.3616412214rem  +  -3.8167938931vw , -3.125rem )) {
+  @supports (left: clamp( -6.25rem , -2.3616412214rem  +  -3.8167938931vw , -3.125rem )) {
     .circle--footer {
-      right: clamp( -6.25rem , -2.3616412214rem  +  -3.8167938931vw , -3.125rem );
+      left: clamp( -6.25rem , -2.3616412214rem  +  -3.8167938931vw , -3.125rem );
     }
   }
-  @supports not (right: clamp( -6.25rem , -2.3616412214rem  +  -3.8167938931vw , -3.125rem )) {
+  @supports not (left: clamp( -6.25rem , -2.3616412214rem  +  -3.8167938931vw , -3.125rem )) {
     .circle--footer {
-      right: calc(-3.125rem + -3.125 * (100vw - 20rem) / 81.875);
+      left: calc(-3.125rem + -3.125 * (100vw - 20rem) / 81.875);
     }
   }
 }
 @media (max-width: 20em) {
   .circle--footer {
-    right: -3.125rem;
+    left: -3.125rem;
   }
 }
 @media (min-width: 101.875em) {

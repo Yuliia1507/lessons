@@ -596,7 +596,7 @@ body {
 	z-index: -1;
 	&--footer {
 		@include adaptiveValue("bottom", -100, -50);
-		@include adaptiveValue("right", -100, -50);
+		@include adaptiveValue("left", -100, -50);
 		@include adaptiveValue("width", 200, 100);
 		@include adaptiveValue("height", 200, 100);
 		opacity: 0.3;
