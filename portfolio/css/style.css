@@ -750,6 +750,7 @@ body.menu-open {
 .hero__title {
   font-family: "Leckerli One";
   opacity: 0;
+  text-wrap: nowrap;
   -webkit-transform: translateY(-30px);
       -ms-transform: translateY(-30px);
           transform: translateY(-30px);
