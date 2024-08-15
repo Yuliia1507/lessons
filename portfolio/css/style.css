@@ -942,7 +942,7 @@ body.menu-open {
 }
 .hero__image {
   position: relative;
-  max-width: 35.625rem;
+  max-width: 34.375rem;
 }
 @media (max-width: 53.125em) {
   .hero__image {
@@ -958,18 +958,18 @@ body.menu-open {
 }
 @media (min-width: 101.875em) {
   .hero__image::before {
-    width: 37.5rem;
+    width: 34.375rem;
   }
 }
 @media (min-width: 20em) and (max-width: 101.875em) {
-  @supports (width: clamp( 15.625rem , 10.2814885496rem  +  26.7175572519vw , 37.5rem )) {
+  @supports (width: clamp( 15.625rem , 11.0448473282rem  +  22.9007633588vw , 34.375rem )) {
     .hero__image::before {
-      width: clamp( 15.625rem , 10.2814885496rem  +  26.7175572519vw , 37.5rem );
+      width: clamp( 15.625rem , 11.0448473282rem  +  22.9007633588vw , 34.375rem );
     }
   }
-  @supports not (width: clamp( 15.625rem , 10.2814885496rem  +  26.7175572519vw , 37.5rem )) {
+  @supports not (width: clamp( 15.625rem , 11.0448473282rem  +  22.9007633588vw , 34.375rem )) {
     .hero__image::before {
-      width: calc(15.625rem + 21.875 * (100vw - 20rem) / 81.875);
+      width: calc(15.625rem + 18.75 * (100vw - 20rem) / 81.875);
     }
   }
 }
@@ -980,18 +980,18 @@ body.menu-open {
 }
 @media (min-width: 101.875em) {
   .hero__image::before {
-    height: 37.5rem;
+    height: 34.375rem;
   }
 }
 @media (min-width: 20em) and (max-width: 101.875em) {
-  @supports (height: clamp( 15.625rem , 10.2814885496rem  +  26.7175572519vw , 37.5rem )) {
+  @supports (height: clamp( 15.625rem , 11.0448473282rem  +  22.9007633588vw , 34.375rem )) {
     .hero__image::before {
-      height: clamp( 15.625rem , 10.2814885496rem  +  26.7175572519vw , 37.5rem );
+      height: clamp( 15.625rem , 11.0448473282rem  +  22.9007633588vw , 34.375rem );
     }
   }
-  @supports not (height: clamp( 15.625rem , 10.2814885496rem  +  26.7175572519vw , 37.5rem )) {
+  @supports not (height: clamp( 15.625rem , 11.0448473282rem  +  22.9007633588vw , 34.375rem )) {
     .hero__image::before {
-      height: calc(15.625rem + 21.875 * (100vw - 20rem) / 81.875);
+      height: calc(15.625rem + 18.75 * (100vw - 20rem) / 81.875);
     }
   }
 }
@@ -1056,18 +1056,18 @@ body.menu-open {
 }
 @media (min-width: 101.875em) {
   .hero__image::after {
-    height: 9.375rem;
+    height: 10rem;
   }
 }
 @media (min-width: 20em) and (max-width: 101.875em) {
-  @supports (height: clamp( 6.25rem , 5.4866412214rem  +  3.8167938931vw , 9.375rem )) {
+  @supports (height: clamp( 6.25rem , 5.3339694656rem  +  4.5801526718vw , 10rem )) {
     .hero__image::after {
-      height: clamp( 6.25rem , 5.4866412214rem  +  3.8167938931vw , 9.375rem );
+      height: clamp( 6.25rem , 5.3339694656rem  +  4.5801526718vw , 10rem );
     }
   }
-  @supports not (height: clamp( 6.25rem , 5.4866412214rem  +  3.8167938931vw , 9.375rem )) {
+  @supports not (height: clamp( 6.25rem , 5.3339694656rem  +  4.5801526718vw , 10rem )) {
     .hero__image::after {
-      height: calc(6.25rem + 3.125 * (100vw - 20rem) / 81.875);
+      height: calc(6.25rem + 3.75 * (100vw - 20rem) / 81.875);
     }
   }
 }
@@ -1078,24 +1078,24 @@ body.menu-open {
 }
 @media (min-width: 101.875em) {
   .hero__image::after {
-    bottom: -2.8125rem;
+    bottom: -4.375rem;
   }
 }
 @media (min-width: 20em) and (max-width: 101.875em) {
-  @supports (bottom: clamp( -2.8125rem , -2.4236641221rem  +  -0.3816793893vw , -2.5rem )) {
+  @supports (bottom: clamp( -4.375rem , -2.8196564885rem  +  -1.5267175573vw , -3.125rem )) {
     .hero__image::after {
-      bottom: clamp( -2.8125rem , -2.4236641221rem  +  -0.3816793893vw , -2.5rem );
+      bottom: clamp( -4.375rem , -2.8196564885rem  +  -1.5267175573vw , -3.125rem );
     }
   }
-  @supports not (bottom: clamp( -2.8125rem , -2.4236641221rem  +  -0.3816793893vw , -2.5rem )) {
+  @supports not (bottom: clamp( -4.375rem , -2.8196564885rem  +  -1.5267175573vw , -3.125rem )) {
     .hero__image::after {
-      bottom: calc(-2.5rem + -0.3125 * (100vw - 20rem) / 81.875);
+      bottom: calc(-3.125rem + -1.25 * (100vw - 20rem) / 81.875);
     }
   }
 }
 @media (max-width: 20em) {
   .hero__image::after {
-    bottom: -2.5rem;
+    bottom: -3.125rem;
   }
 }
 .hero__image img {

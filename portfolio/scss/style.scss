@@ -497,14 +497,14 @@ body {
 
 	&__image {
 		position: relative;
-		max-width: toRem(570);
+		max-width: toRem(550);
 		@media (max-width: toEm(850)) {
 			max-width: toRem(400);
 		}
 		&::before {
 			content: "";
-			@include adaptiveValue("width", 600, 250);
-			@include adaptiveValue("height", 600, 250);
+			@include adaptiveValue("width", 550, 250);
+			@include adaptiveValue("height", 550, 250);
 			background-color: var(--accent-color);
 			position: absolute;
 			z-index: -1;
@@ -515,11 +515,11 @@ body {
 		&::after {
 			content: "";
 			width: 100%;
-			@include adaptiveValue("height", 150, 100);
+			@include adaptiveValue("height", 160, 100);
 			background-color: $background;
 			filter: blur(20px);
 			position: absolute;
-			@include adaptiveValue("bottom", -45, -40);
+			@include adaptiveValue("bottom", -70, -50);
 			left: 0;
 			z-index: 1;
 		}
