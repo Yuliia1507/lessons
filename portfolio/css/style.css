@@ -2037,6 +2037,7 @@ body.menu-open {
   left: 0;
   background: -webkit-gradient(linear, left top, right top, from(#16111f), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to right, #16111f 0%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
 }
 @media (min-width: 101.875em) {
   .logos::before {
@@ -2069,6 +2070,7 @@ body.menu-open {
   right: 0;
   background: -webkit-gradient(linear, right top, left top, from(#16111f), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to left, #16111f 0%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
 }
 @media (min-width: 101.875em) {
   .logos::after {
@@ -2160,8 +2162,8 @@ body.menu-open {
 .item-logo img {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
   height: auto;
 }
 @media (min-width: 101.875em) {
