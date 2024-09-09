@@ -243,7 +243,7 @@ body {
 	padding-bottom: toRem(5);
 	background: url("../img/hero-bg.webp") 0 0 / cover no-repeat;
 	@media (max-width: toEm(1550)) {
-		background: url("../img/hero-bg.png") center / cover no-repeat;
+		background: url("../img/hero-bg.webp") center / cover no-repeat;
 	}
 	.hero__bg {
 		position: absolute;

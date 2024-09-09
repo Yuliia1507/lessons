@@ -486,7 +486,7 @@ body.menu-open {
 }
 @media (max-width: 96.875em) {
   .hero {
-    background: url("../img/hero-bg.png") center/cover no-repeat;
+    background: url("../img/hero-bg.webp") center/cover no-repeat;
   }
 }
 .hero .hero__bg {
