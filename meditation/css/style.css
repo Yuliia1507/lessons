@@ -960,9 +960,6 @@ body.menu-open {
   }
 }
 
-.meditation {
-  scroll-margin-top: 4.8125rem;
-}
 @media (min-width: 103.375em) {
   .meditation {
     padding-top: 7.5rem;
@@ -1451,9 +1448,6 @@ body.menu-open {
   }
 }
 
-.practice {
-  scroll-margin-top: 4.8125rem;
-}
 @media (min-width: 103.375em) {
   .practice {
     padding-top: 4.8125rem;
@@ -2002,7 +1996,6 @@ body.menu-open {
 }
 
 .sound {
-  scroll-margin-top: 4.8125rem;
   width: 100%;
   background: url("../img/sound-background.webp") right/cover no-repeat;
 }
@@ -2502,7 +2495,6 @@ body.menu-open {
 }
 
 .advantages {
-  scroll-margin-top: 4.8125rem;
   background-color: #fff;
   background: url("../img/advantages-bg.webp") 0 0/auto 100% repeat-x;
   position: relative;
@@ -3018,7 +3010,6 @@ body.menu-open {
 }
 
 .transformation {
-  scroll-margin-top: 4.8125rem;
   background: url("../img/transformation-background.png") center/cover no-repeat;
 }
 @media (min-width: 103.375em) {
