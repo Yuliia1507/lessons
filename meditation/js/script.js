@@ -1,37 +1,32 @@
 "use strict"
-
 document.addEventListener("click", documentActions);
 
 function documentActions(e) {
 	const targetElement = e.target;
 
+	// Toggle menu open/close on burger icon click
 	if (targetElement.closest('.icon-menu')) {
 		document.body.classList.toggle('menu-open');
+		document.querySelector('.menu__body').classList.toggle('open');
+		document.querySelector('.icon-menu').classList.toggle('open'); // Toggle icon state
 	}
 }
 
 let wrapperMenu = document.querySelector('.icon-menu');
 
-wrapperMenu.addEventListener('click', function () {
-	wrapperMenu.classList.toggle('open');
-})
-
-const icons = document.querySelectorAll('.menu__item');
-
-
+// Close menu and reset icon state when menu links are clicked
 document.querySelectorAll('.menu__link').forEach(link => {
 	link.addEventListener('click', function () {
+		// Remove 'active' class from previously active link and add to the clicked link
 		document.querySelector('.menu__link.active').classList.remove('active');
 		this.classList.add('active');
 
-		// Закриття меню при натисканні на пункт навігації
+		// Close the menu
 		document.querySelector('.menu__body').classList.remove('open');
 		document.body.classList.remove('menu-open');
-		icons.forEach(icon => icon.classList.remove('active'));
+		document.querySelector('.icon-menu').classList.remove('open'); // Reset icon state
 	});
 });
-
-document.addEventListener('click', documentActions);
 
 //==================================
 
