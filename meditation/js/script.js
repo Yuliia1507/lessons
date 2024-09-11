@@ -159,17 +159,25 @@ items.forEach(item => {
 
 let lastScrollTop = 0;
 const header = document.querySelector('.header');
+let ticking = false;
 
 window.addEventListener('scroll', function () {
 	const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-	if (scrollTop > lastScrollTop) {
-		// Скролимо вниз, додаємо клас hide
-		header.classList.add('hide');
-	} else {
-		// Скролимо вгору, видаляємо клас hide
-		header.classList.remove('hide');
-	}
+	if (!ticking) {
+		window.requestAnimationFrame(() => {
+			if (scrollTop > lastScrollTop) {
+				// Скролимо вниз, додаємо клас hide
+				header.classList.add('hide');
+			} else {
+				// Скролимо вгору, видаляємо клас hide
+				header.classList.remove('hide');
+			}
 
-	lastScrollTop = scrollTop;
+			lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Звертаємо увагу на граничні значення
+			ticking = false;
+		});
+
+		ticking = true;
+	}
 });
