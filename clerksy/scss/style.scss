@@ -107,6 +107,9 @@ body {
 			transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 			border-radius: 100% 0% 68% 32% / 43% 72% 28% 57%;
 			z-index: 50;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			.menu-open & {
 				right: 0;
 				transform: translateX(0);
