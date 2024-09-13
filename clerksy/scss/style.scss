@@ -99,9 +99,9 @@ body {
 			position: absolute;
 			min-width: toRem(290);
 			min-height: toRem(290);
-			padding: 30px;
-			top: 80px;
-			right: -210px;
+			padding: toRem(50);
+			top: toRem(80);
+			right: toRem(-210);
 			background: #f7bc28;
 			transform: translateX(100%);
 			transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
@@ -730,7 +730,7 @@ body {
 	// .clerksy__title
 
 	&__title {
-				text-align: center;
+		text-align: center;
 
 		max-width: toRem(727);
 		margin: 0 auto;
@@ -751,7 +751,7 @@ body {
 	// .clerksy__text
 
 	&__text {
-				text-align: center;
+		text-align: center;
 
 		max-width: toRem(343);
 		margin: 0 auto;

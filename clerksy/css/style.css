@@ -260,9 +260,9 @@ body.menu-open {
     position: absolute;
     min-width: 18.125rem;
     min-height: 18.125rem;
-    padding: 30px;
-    top: 80px;
-    right: -210px;
+    padding: 3.125rem;
+    top: 5rem;
+    right: -13.125rem;
     background: #f7bc28;
     -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
