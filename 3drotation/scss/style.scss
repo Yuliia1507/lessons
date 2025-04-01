@@ -1,0 +1,149 @@
+@use "sass:math";
+
+// Кольори
+
+// Функції
+@import "_functions.scss";
+// Шрифти
+@import "_fonts.scss";
+// Іконки
+@import "_icons.scss";
+// Обнулення
+@import "_reset.scss";
+// Компоненти
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1170;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+html {
+	scroll-behavior: smooth;
+}
+body {
+	color: #fff;
+}
+.wrapper {
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	main {
+		flex-grow: 1;
+	}
+}
+
+[class*="__container"] {
+	margin: 0 auto;
+	padding: 0 toRem(15);
+}
+.hero {
+	min-height: 100vh;
+	background-image: linear-gradient(to right, #cdcdcdcc, #cdcdcdcc), url("../img/jungle.jpg");
+}
+.banner {
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	margin-top: toRem(-50px);
+
+	&__product {
+		// background-color: orangered;
+		width: toRem(500);
+		bottom: toRem(100);
+		left: 50%;
+		transform: translateX((-50%));
+		position: absolute;
+		z-index: 2;
+		transition: all 0.7s;
+		display: flex;
+		--left: 0px;
+		@media (max-width: toEm(1640)) {
+			bottom: toRem(50);
+		}
+		&:hover {
+			bottom: 250px;
+			.banner__soda {
+				&:nth-child(2) {
+					opacity: 1;
+					--left: -1000px;
+				}
+
+				&:nth-child(1) {
+					opacity: 0;
+					--left: -1000px;
+				}
+			}
+				@media (max-width: toEm(1640)) {
+			bottom: 150px;
+			}
+		}
+	}
+	&__soda {
+		mask-image: url(../img/mockup.png);
+		width: 280px;
+		aspect-ratio: 2 / 4;
+		background-blend-mode: multiply;
+		transition: 0.8s;
+		mask-size: auto 100%;
+		position: absolute;
+		bottom: 0;
+		left: calc(50%);
+		--left: -200px;
+		transform: translateX(-50%);
+		&:nth-child(2) {
+			opacity: 0;
+		}
+		&--one {
+			background:
+				url(../img/bg-1.png) var(--left) 0,
+				url(../img/mockup.png);
+			background-size: auto 100%;
+		}
+		&--two {
+			background:
+				url(../img/bg-2.png) var(--left) 0,
+				url(../img/mockup.png);
+			background-size: auto 100%;
+		}
+	}
+	&__leaf {
+		position: absolute;
+		z-index: 5;
+		pointer-events: none;
+		transition: all 0.4s ease-out;
+
+		&--one {
+			width: toRem(700);
+			height: auto;
+			bottom: -30%;
+			right: 10%;
+			transform: rotate(-25deg);
+			@media (max-width: toEm(1640)) {
+				right:0;
+			}
+		}
+		&--two {
+			width: toRem(900);
+			height: auto;
+			left: 10%;
+			bottom: -20%;
+			transform: rotate(20deg);
+			@media (max-width: toEm(1640)) {
+				left: 0;
+			}
+		}
+	}
+}
+.banner:has(.banner__product:hover) .banner__leaf--one {
+	transform: translateX(50%) translateY(-50px);
+}
+.banner:has(.banner__product:hover) .banner__leaf--two {
+	transform: translateX(-50%) translateY(-50px);
+}
