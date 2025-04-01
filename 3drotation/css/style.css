@@ -150,7 +150,6 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  margin-top: -3.125pxrem;
 }
 .banner__product {
   width: 31.25rem;
