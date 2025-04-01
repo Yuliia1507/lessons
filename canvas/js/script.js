@@ -40,8 +40,8 @@ class Particle {
 		let forceDirectionY = dy / distance;
 		let maxDistance = mouse.radius;
 		let force = (maxDistance - distance) / maxDistance;
-		let directionX = forceDirectionX * force * this.speed * 3;
-		let directionY = forceDirectionY * force * this.speed * 3;
+		let directionX = forceDirectionX * force * this.speed * 5;
+		let directionY = forceDirectionY * force * this.speed * 5;
 
 		if (distance < mouse.radius) {
 			this.x -= directionX;
