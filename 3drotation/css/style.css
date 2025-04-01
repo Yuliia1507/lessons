@@ -210,11 +210,11 @@ body {
   opacity: 0;
 }
 .banner__soda--one {
-  background: url(../img/bg-1.png) var(--left) 0, url(../img/mockup.png);
+  background: url(../img/bg-1.png) var(--left), url(../img/mockup.png) 0 0;
   background-size: auto 100%;
 }
 .banner__soda--two {
-  background: url(../img/bg-2.png) var(--left) 0, url(../img/mockup.png);
+  background: url(../img/bg-2.png) var(--left), url(../img/mockup.png) 0 0;
   background-size: auto 100%;
 }
 .banner__leaf {

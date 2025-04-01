@@ -79,8 +79,8 @@ body {
 					--left: -1000px;
 				}
 			}
-				@media (max-width: toEm(1640)) {
-			bottom: 150px;
+			@media (max-width: toEm(1640)) {
+				bottom: 150px;
 			}
 		}
 	}
@@ -96,19 +96,20 @@ body {
 		left: calc(50%);
 		--left: -200px;
 		transform: translateX(-50%);
+
 		&:nth-child(2) {
 			opacity: 0;
 		}
 		&--one {
 			background:
-				url(../img/bg-1.png) var(--left) 0,
-				url(../img/mockup.png);
+				url(../img/bg-1.png) var(--left),
+				url(../img/mockup.png) 0 0;
 			background-size: auto 100%;
 		}
 		&--two {
 			background:
-				url(../img/bg-2.png) var(--left) 0,
-				url(../img/mockup.png);
+				url(../img/bg-2.png) var(--left),
+				url(../img/mockup.png) 0 0;
 			background-size: auto 100%;
 		}
 	}
@@ -125,7 +126,7 @@ body {
 			right: 10%;
 			transform: rotate(-25deg);
 			@media (max-width: toEm(1640)) {
-				right:0;
+				right: 0;
 			}
 		}
 		&--two {
