@@ -124,7 +124,7 @@ html {
 body {
   margin: 0;
   overflow: hidden;
-  background: #111;
+  background: #111111;
   font-family: sans-serif;
 }
 
@@ -139,7 +139,7 @@ body {
   position: absolute;
   background: #333;
   color: #fff;
-  padding: 8px 12px;
+  padding: 10px 15px;
   border-radius: 6px;
   font-weight: bold;
   cursor: -webkit-grab;
@@ -155,17 +155,17 @@ body {
           transform-origin: center center;
 }
 .word:nth-child(5n+1) {
-  background: #ff6b6b;
+  background: #0079fb;
 }
 .word:nth-child(5n+2) {
   background: #48dbfb;
 }
 .word:nth-child(5n+3) {
-  background: #1dd1a1;
+  background: #48ff00;
 }
 .word:nth-child(5n+4) {
-  background: #feca57;
+  background: #ff4d01;
 }
 .word:nth-child(5n+5) {
-  background: #97d0a6;
+  background: #00fffb;
 }
